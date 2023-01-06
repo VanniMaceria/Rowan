@@ -141,7 +141,7 @@ public class DettaglioPokemon extends Activity {
     public void OnForwardClick(View v){    //aggiungi l'effetto slide left/right
         Intent i = new Intent(this, DettaglioPokemon.class);
         i.putExtra("id", id++);
-        startActivity(i);        
+        startActivity(i);
     }
 
     public void cambiaColoreTipo1(TextView tipo1){
