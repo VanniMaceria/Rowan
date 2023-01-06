@@ -1,4 +1,5 @@
 *.iml
+*.docx
 .gradle
 /local.properties
 /.idea/caches
@@ -12,5 +13,4 @@
 /captures
 .externalNativeBuild
 .cxx
-.docx
 local.properties
