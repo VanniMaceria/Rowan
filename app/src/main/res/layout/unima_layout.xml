@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Unima">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La regione di Unima"
+        android:textSize="30dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textColor="@color/black"
+        android:layout_marginStart="2dp"
+        android:id="@+id/titolo">
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/mappaUnima"
+        android:layout_below="@id/titolo"
+        android:src="@drawable/unima"
+        android:layout_marginTop="-50dp">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I pokèmon della regione"
+        android:textSize="30dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textColor="@color/black"
+        android:layout_marginStart="2dp"
+        android:id="@+id/secondoTitolo"
+        android:layout_below="@id/mappaUnima"
+        android:layout_marginTop="-65dp">
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Font1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="Font2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/ubuntu_medium</item>
+    </style>
+
+</resources>

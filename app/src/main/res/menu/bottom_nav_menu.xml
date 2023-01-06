@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:title="Pokèdex"
+        android:id="@+id/pokedex"
+        android:icon="@drawable/ic_baseline_catching_pokemon_24"/>
+    <item
+        android:title="Informazioni"
+        android:id="@+id/info"
+        android:icon="@drawable/ic_baseline_info_24"/>
+</menu>

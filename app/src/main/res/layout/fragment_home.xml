@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scegli una regione"
+                android:textSize="30dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/titolo"
+                />
+
+            <ImageView
+                android:id="@+id/mappaKanto"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/titolo"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/kanto">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kanto"
+                android:background="#6f81a7"
+                android:layout_below="@id/mappaKanto"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="-12dp"
+                android:textSize="18dp"
+                android:id="@+id/kanto"
+                android:paddingStart="2dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/kanto"
+                android:src="@drawable/mappa_johto"
+                android:id="@+id/mappaJohto"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Johto"
+                android:background="#6f81a7"
+                android:layout_below="@id/mappaJohto"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="-27dp"
+                android:textSize="18dp"
+                android:id="@+id/johto"
+                android:paddingStart="2dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/johto"
+
+                android:src="@drawable/hoenn"
+                android:id="@+id/mappaHoenn"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hoenn"
+                android:background="#6f81a7"
+                android:layout_below="@id/mappaHoenn"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="-12dp"
+                android:textSize="18dp"
+                android:id="@+id/hoenn"
+                android:paddingStart="2dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/hoenn"
+                android:src="@drawable/sinnoh"
+                android:id="@+id/mappaSinnoh"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sinnoh"
+                android:background="#6f81a7"
+                android:layout_below="@id/mappaSinnoh"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="-12dp"
+                android:textSize="18dp"
+                android:id="@+id/sinnoh"
+                android:paddingStart="2dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/sinnoh"
+                android:src="@drawable/unima"
+                android:id="@+id/mappaUnima"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-15dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unima"
+                android:background="#6f81a7"
+                android:layout_below="@id/mappaUnima"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="-27dp"
+                android:textSize="18dp"
+                android:id="@+id/unima"
+                android:paddingStart="2dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/unima"
+                android:src="@drawable/kalos"
+                android:id="@+id/mappaKalos"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-12dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalos"
+                android:background="#6f81a7"
+                android:layout_below="@id/mappaKalos"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="-22dp"
+                android:textSize="18dp"
+                android:id="@+id/kalos"
+                android:paddingStart="2dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/kalos"
+                android:src="@drawable/alola"
+                android:id="@+id/mappaAlola"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alola"
+                android:background="#6f81a7"
+                android:layout_below="@id/mappaAlola"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="-12dp"
+                android:textSize="18dp"
+                android:id="@+id/alola"
+                android:paddingStart="2dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/alola"
+                android:src="@drawable/galar"
+                android:id="@+id/mappaGalar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Galar"
+                android:background="#6f81a7"
+                android:layout_below="@id/mappaGalar"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="-2dp"
+                android:textSize="18dp"
+                android:id="@+id/galar"
+                android:paddingStart="2dp">
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

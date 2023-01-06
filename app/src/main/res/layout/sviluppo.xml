@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diritti">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Tecnologie usate per lo sviluppo dell'applicazione"
+        android:id="@+id/titolo"
+        android:background="@color/BlueDuck">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:text="Frontend"
+        android:layout_below="@id/titolo"
+        android:id="@+id/frontend"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutFrontend"
+        android:orientation="horizontal"
+        android:layout_below="@id/frontend">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/xml_file">
+        </ImageView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/BlueDuck"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/layoutFrontend"
+        android:id="@+id/linea1">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:text="Backend"
+        android:layout_below="@id/linea1"
+        android:id="@+id/backend"
+        android:layout_marginStart="3dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutBackend"
+        android:orientation="horizontal"
+        android:layout_below="@id/backend">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/javalogo">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sqlite_logo">
+        </ImageView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/BlueDuck"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/layoutBackend"
+        android:id="@+id/linea2">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambiente di sviluppo"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/linea2"
+        android:id="@+id/ambienteSviluppo"
+        android:layout_marginStart="3dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutAmbienti"
+        android:orientation="horizontal"
+        android:layout_below="@id/ambienteSviluppo">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/androidstudiologo">
+        </ImageView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
