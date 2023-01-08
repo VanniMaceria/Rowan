@@ -6,19 +6,12 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.Nullable;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.io.ByteArrayOutputStream;
 
 public class DettaglioPokemon extends Activity {
     int id;
@@ -132,16 +125,19 @@ public class DettaglioPokemon extends Activity {
         }
     }
 
-    public void OnBackClick(View v){    //aggiungi l'effetto slide left/right
+    public void OnBackClick(View v){
         Intent i = new Intent(this, DettaglioPokemon.class);
         i.putExtra("id", id--);
         startActivity(i);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);   //animazione slide da sx a dx
     }
 
-    public void OnForwardClick(View v){    //aggiungi l'effetto slide left/right
+    public void OnForwardClick(View v){
         Intent i = new Intent(this, DettaglioPokemon.class);
         i.putExtra("id", id++);
         startActivity(i);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);    //animazione slide da dx a sx
+
     }
 
     public void cambiaColoreTipo1(TextView tipo1){
@@ -210,7 +206,6 @@ public class DettaglioPokemon extends Activity {
         }
 
         else {
-
             switch (tipo2.getText().toString()) {
                 case "Erba":
                     tipo2.setBackgroundColor(Color.rgb(50, 224, 11));
