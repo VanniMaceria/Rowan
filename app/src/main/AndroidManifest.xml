@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rowan"
         tools:targetApi="31"
-        android:requestLegacyExternalStorage="true">
+        android:requestLegacyExternalStorage="true"
+        android:screenOrientation="portrait">
 
         <activity
             android:name=".MainActivity"

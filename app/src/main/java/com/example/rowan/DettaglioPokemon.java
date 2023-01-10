@@ -72,12 +72,12 @@ public class DettaglioPokemon extends Activity {
         tipo1 = new TextView(this);
         tipo1 = findViewById(R.id.dettaglioTipo1);
         tipo1.setText(cursor.getString(3));
-        cambiaColoreTipo1(tipo1);
+        cambiaColoreTipo(tipo1);
 
         tipo2 = new TextView(this);
         tipo2 = findViewById(R.id.dettaglioTipo2);
         tipo2.setText(cursor.getString(4));
-        cambiaColoreTipo2(tipo2);
+        cambiaColoreTipo(tipo2);
 
         if(tipo2.equals("null")){
             tipo2.setText(null);
@@ -137,131 +137,68 @@ public class DettaglioPokemon extends Activity {
         i.putExtra("id", id++);
         startActivity(i);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);    //animazione slide da dx a sx
-
     }
 
-    public void cambiaColoreTipo1(TextView tipo1){
-        switch (tipo1.getText().toString()){
+    public void cambiaColoreTipo(TextView tipo){
+        if(tipo.getText().toString().equals("null")) {
+            tipo.setTextColor(Color.rgb(111, 129, 167));
+        }
+
+        switch (tipo.getText().toString()){
             case "Erba":
-                tipo1.setBackgroundColor(Color.rgb(50, 224, 11));
+                tipo.setBackgroundColor(Color.rgb(50, 224, 11));
                 break;
             case "Fuoco":
-                tipo1.setBackgroundColor(Color.rgb(240, 54, 12));
+                tipo.setBackgroundColor(Color.rgb(240, 54, 12));
                 break;
             case "Acqua":
-                tipo1.setBackgroundColor(Color.rgb(11, 101, 219));
+                tipo.setBackgroundColor(Color.rgb(11, 101, 219));
                 break;
             case "Elettro":
-                tipo1.setBackgroundColor(Color.rgb(229, 245, 7));
+                tipo.setBackgroundColor(Color.rgb(229, 245, 7));
                 break;
             case "Normale":
-                tipo1.setBackgroundColor(Color.rgb(150, 150, 144));
+                tipo.setBackgroundColor(Color.rgb(150, 150, 144));
                 break;
             case "Ghiaccio":
-                tipo1.setBackgroundColor(Color.rgb(108, 245, 229));
+                tipo.setBackgroundColor(Color.rgb(108, 245, 229));
                 break;
             case "Lotta":
-                tipo1.setBackgroundColor(Color.rgb(209, 83, 4));
+                tipo.setBackgroundColor(Color.rgb(209, 83, 4));
                 break;
             case "Veleno":
-                tipo1.setBackgroundColor(Color.rgb(92, 4, 112));
+                tipo.setBackgroundColor(Color.rgb(92, 4, 112));
                 break;
             case "Terra":
-                tipo1.setBackgroundColor(Color.rgb(148, 76, 16));
+                tipo.setBackgroundColor(Color.rgb(148, 76, 16));
                 break;
             case "Volante":
-                tipo1.setBackgroundColor(Color.rgb(149, 245, 240));
+                tipo.setBackgroundColor(Color.rgb(149, 245, 240));
                 break;
             case "Psico":
-                tipo1.setBackgroundColor(Color.rgb(168, 5, 227));
+                tipo.setBackgroundColor(Color.rgb(168, 5, 227));
                 break;
             case "Coleottero":
-                tipo1.setBackgroundColor(Color.rgb(148, 199, 8));
+                tipo.setBackgroundColor(Color.rgb(148, 199, 8));
                 break;
             case "Roccia":
-                tipo1.setBackgroundColor(Color.rgb(161, 154, 95));
+                tipo.setBackgroundColor(Color.rgb(161, 154, 95));
                 break;
             case "Spettro":
-                tipo1.setBackgroundColor(Color.rgb(62, 6, 94));
+                tipo.setBackgroundColor(Color.rgb(62, 6, 94));
                 break;
             case "Drago":
-                tipo1.setBackgroundColor(Color.rgb(38, 3, 99));
+                tipo.setBackgroundColor(Color.rgb(38, 3, 99));
                 break;
             case "Buio":
-                tipo1.setBackgroundColor(Color.rgb(37, 36, 38));
+                tipo.setBackgroundColor(Color.rgb(37, 36, 38));
                 break;
             case "Acciaio":
-                tipo1.setBackgroundColor(Color.rgb(143, 138, 148));
+                tipo.setBackgroundColor(Color.rgb(143, 138, 148));
                 break;
             case "Folletto":
-                tipo1.setBackgroundColor(Color.rgb(227, 104, 227));
+                tipo.setBackgroundColor(Color.rgb(227, 104, 227));
                 break;
-        }
-    }
-
-    public void cambiaColoreTipo2(TextView tipo2){
-        //controllo per i pokemon con un solo tipo
-        if(tipo2.getText().toString().equals("null")) {
-            tipo2.setTextColor(Color.rgb(111, 129, 167));
-        }
-
-        else {
-            switch (tipo2.getText().toString()) {
-                case "Erba":
-                    tipo2.setBackgroundColor(Color.rgb(50, 224, 11));
-                    break;
-                case "Fuoco":
-                    tipo2.setBackgroundColor(Color.rgb(240, 54, 12));
-                    break;
-                case "Acqua":
-                    tipo2.setBackgroundColor(Color.rgb(11, 101, 219));
-                    break;
-                case "Elettro":
-                    tipo2.setBackgroundColor(Color.rgb(229, 245, 7));
-                    break;
-                case "Normale":
-                    tipo2.setBackgroundColor(Color.rgb(150, 150, 144));
-                    break;
-                case "Ghiaccio":
-                    tipo2.setBackgroundColor(Color.rgb(108, 245, 229));
-                    break;
-                case "Lotta":
-                    tipo2.setBackgroundColor(Color.rgb(209, 83, 4));
-                    break;
-                case "Veleno":
-                    tipo2.setBackgroundColor(Color.rgb(92, 4, 112));
-                    break;
-                case "Terra":
-                    tipo2.setBackgroundColor(Color.rgb(148, 76, 16));
-                    break;
-                case "Volante":
-                    tipo2.setBackgroundColor(Color.rgb(149, 245, 240));
-                    break;
-                case "Psico":
-                    tipo2.setBackgroundColor(Color.rgb(168, 5, 227));
-                    break;
-                case "Coleottero":
-                    tipo2.setBackgroundColor(Color.rgb(148, 199, 8));
-                    break;
-                case "Roccia":
-                    tipo2.setBackgroundColor(Color.rgb(161, 154, 95));
-                    break;
-                case "Spettro":
-                    tipo2.setBackgroundColor(Color.rgb(62, 6, 94));
-                    break;
-                case "Drago":
-                    tipo2.setBackgroundColor(Color.rgb(38, 3, 99));
-                    break;
-                case "Buio":
-                    tipo2.setBackgroundColor(Color.rgb(37, 36, 38));
-                    break;
-                case "Acciaio":
-                    tipo2.setBackgroundColor(Color.rgb(143, 138, 148));
-                    break;
-                case "Folletto":
-                    tipo2.setBackgroundColor(Color.rgb(227, 104, 227));
-                    break;
-            }
         }
     }
 

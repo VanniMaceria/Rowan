@@ -39,7 +39,8 @@
                 android:layout_toLeftOf="@id/artworkBig"
                 android:layout_marginTop="170dp"
                 android:backgroundTint="@color/white"
-                android:onClick="OnBackClick">
+                android:onClick="OnBackClick"
+                style="?android:attr/borderlessButtonStyle">
             </Button>
 
             <Button
@@ -49,7 +50,8 @@
                 android:layout_toRightOf="@id/artworkBig"
                 android:layout_marginTop="170dp"
                android:backgroundTint="@color/white"
-                android:onClick="OnForwardClick">
+                android:onClick="OnForwardClick"
+                style="?android:attr/borderlessButtonStyle">
             </Button>
 
             <TextView
@@ -86,13 +88,13 @@
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="2dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/BlueDuck"
                         android:fontFamily="@font/ubuntu_medium"
+                        android:paddingHorizontal="7dp"
                         android:text="Tipo"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
-                        android:background="@color/BlueDuck"
-                        android:layout_marginEnd="10dp"
-                        android:paddingHorizontal="5dp">
+                        android:textSize="25dp">
                     </TextView>
 
                     <TextView
@@ -150,8 +152,7 @@
                         android:textSize="25dp"
                         android:fontFamily="@font/ubuntu_medium"
                         android:background="@color/BlueDuck"
-                        android:layout_marginEnd="10dp"
-                        android:paddingHorizontal="5dp">
+                        android:paddingHorizontal="10dp">
                     </TextView>
 
                     <TextView
@@ -175,8 +176,7 @@
                         android:textSize="25dp"
                         android:fontFamily="@font/ubuntu_medium"
                         android:background="@color/BlueDuck"
-                        android:layout_marginEnd="10dp"
-                        android:paddingHorizontal="5dp">
+                        android:paddingHorizontal="10dp">
                     </TextView>
 
                     <TextView
@@ -213,14 +213,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
                         android:fontFamily="@font/ubuntu_medium"
                         android:paddingVertical="5dp"
                         android:text="Abilità"
                         android:textColor="@color/white"
                         android:textSize="25dp"
                         android:background="@color/BlueDuck"
-                        android:paddingHorizontal="5dp"
+                        android:paddingHorizontal="10dp"
                         >
                     </TextView>
 
@@ -262,10 +261,9 @@
                         android:paddingVertical="5dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:layout_marginEnd="20dp"
                         android:fontFamily="@font/ubuntu_medium"
                         android:background="@color/BlueDuck"
-                        android:paddingHorizontal="5dp">
+                        android:paddingHorizontal="10dp">
                     </TextView>
 
                     <TextView
@@ -306,22 +304,21 @@
                         android:paddingVertical="5dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:layout_marginEnd="20dp"
                         android:fontFamily="@font/ubuntu_medium"
                         android:background="@color/BlueDuck"
-                        android:paddingHorizontal="5dp">
+                        android:paddingHorizontal="10dp">
                     </TextView>
 
                     <TextView
                         android:id="@+id/dettaglioCategoria"
                         android:layout_width="190dp"
                         android:layout_height="wrap_content"
-                        android:text="placeholder"
-                        android:paddingVertical="5dp"
                         android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:paddingVertical="5dp"
+                        android:text="placeholder"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium">
+                        android:textSize="25dp">
                     </TextView>
 
                 </LinearLayout>
@@ -353,7 +350,7 @@
                         android:text="Descrizione"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:paddingHorizontal="5dp">
+                        android:paddingHorizontal="10dp">
                     </TextView>
 
                     <TextView
@@ -362,10 +359,10 @@
                         android:layout_height="wrap_content"
                         android:text="placeholder placeholder placeholder placeholder"
                         android:paddingVertical="5dp"
-                        android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium">
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:layout_marginStart="2dp">
                     </TextView>
 
                 </LinearLayout>
