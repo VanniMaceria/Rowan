@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
@@ -126,14 +127,15 @@ public class DettaglioPokemon extends Activity {
     }
 
     public void OnBackClick(View v){
-        Intent i = new Intent(this, DettaglioPokemon.class);
+        Intent i = new Intent(this, this.getClass());
         i.putExtra("id", id--);
         startActivity(i);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);   //animazione slide da sx a dx
+
     }
 
     public void OnForwardClick(View v){
-        Intent i = new Intent(this, DettaglioPokemon.class);
+        Intent i = new Intent(this, this.getClass());
         i.putExtra("id", id++);
         startActivity(i);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);    //animazione slide da dx a sx
@@ -144,62 +146,63 @@ public class DettaglioPokemon extends Activity {
             tipo.setTextColor(Color.rgb(111, 129, 167));
         }
 
-        switch (tipo.getText().toString()){
-            case "Erba":
-                tipo.setBackgroundColor(Color.rgb(50, 224, 11));
-                break;
-            case "Fuoco":
-                tipo.setBackgroundColor(Color.rgb(240, 54, 12));
-                break;
-            case "Acqua":
-                tipo.setBackgroundColor(Color.rgb(11, 101, 219));
-                break;
-            case "Elettro":
-                tipo.setBackgroundColor(Color.rgb(229, 245, 7));
-                break;
-            case "Normale":
-                tipo.setBackgroundColor(Color.rgb(150, 150, 144));
-                break;
-            case "Ghiaccio":
-                tipo.setBackgroundColor(Color.rgb(108, 245, 229));
-                break;
-            case "Lotta":
-                tipo.setBackgroundColor(Color.rgb(209, 83, 4));
-                break;
-            case "Veleno":
-                tipo.setBackgroundColor(Color.rgb(92, 4, 112));
-                break;
-            case "Terra":
-                tipo.setBackgroundColor(Color.rgb(148, 76, 16));
-                break;
-            case "Volante":
-                tipo.setBackgroundColor(Color.rgb(149, 245, 240));
-                break;
-            case "Psico":
-                tipo.setBackgroundColor(Color.rgb(168, 5, 227));
-                break;
-            case "Coleottero":
-                tipo.setBackgroundColor(Color.rgb(148, 199, 8));
-                break;
-            case "Roccia":
-                tipo.setBackgroundColor(Color.rgb(161, 154, 95));
-                break;
-            case "Spettro":
-                tipo.setBackgroundColor(Color.rgb(62, 6, 94));
-                break;
-            case "Drago":
-                tipo.setBackgroundColor(Color.rgb(38, 3, 99));
-                break;
-            case "Buio":
-                tipo.setBackgroundColor(Color.rgb(37, 36, 38));
-                break;
-            case "Acciaio":
-                tipo.setBackgroundColor(Color.rgb(143, 138, 148));
-                break;
-            case "Folletto":
-                tipo.setBackgroundColor(Color.rgb(227, 104, 227));
-                break;
+        else{
+            switch (tipo.getText().toString()){
+                case "Erba":
+                    tipo.setBackgroundColor(Color.rgb(50, 224, 11));
+                    break;
+                case "Fuoco":
+                    tipo.setBackgroundColor(Color.rgb(240, 54, 12));
+                    break;
+                case "Acqua":
+                    tipo.setBackgroundColor(Color.rgb(11, 101, 219));
+                    break;
+                case "Elettro":
+                    tipo.setBackgroundColor(Color.rgb(253, 218, 13));
+                    break;
+                case "Normale":
+                    tipo.setBackgroundColor(Color.rgb(150, 150, 144));
+                    break;
+                case "Ghiaccio":
+                    tipo.setBackgroundColor(Color.rgb(108, 245, 229));
+                    break;
+                case "Lotta":
+                    tipo.setBackgroundColor(Color.rgb(209, 83, 4));
+                    break;
+                case "Veleno":
+                    tipo.setBackgroundColor(Color.rgb(92, 4, 112));
+                    break;
+                case "Terra":
+                    tipo.setBackgroundColor(Color.rgb(148, 76, 16));
+                    break;
+                case "Volante":
+                    tipo.setBackgroundColor(Color.rgb(149, 245, 240));
+                    break;
+                case "Psico":
+                    tipo.setBackgroundColor(Color.rgb(168, 5, 227));
+                    break;
+                case "Coleottero":
+                    tipo.setBackgroundColor(Color.rgb(148, 199, 8));
+                    break;
+                case "Roccia":
+                    tipo.setBackgroundColor(Color.rgb(161, 154, 95));
+                    break;
+                case "Spettro":
+                    tipo.setBackgroundColor(Color.rgb(62, 6, 94));
+                    break;
+                case "Drago":
+                    tipo.setBackgroundColor(Color.rgb(38, 3, 99));
+                    break;
+                case "Buio":
+                    tipo.setBackgroundColor(Color.rgb(37, 36, 38));
+                    break;
+                case "Acciaio":
+                    tipo.setBackgroundColor(Color.rgb(143, 138, 148));
+                    break;
+                case "Folletto":
+                    tipo.setBackgroundColor(Color.rgb(227, 104, 227));
+                    break;
+            }
         }
     }
-
 }

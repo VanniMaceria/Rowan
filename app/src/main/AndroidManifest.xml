@@ -15,12 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rowan"
         tools:targetApi="31"
-        android:requestLegacyExternalStorage="true"
-        android:screenOrientation="portrait">
+        android:requestLegacyExternalStorage="true">
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,62 +34,74 @@
 
         <activity
             android:name=".Diritti"
-            android:label="Diritti">
+            android:label="Diritti"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Sviluppo"
-            android:label="Sviluppo">
+            android:label="Sviluppo"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Kanto"
-            android:label="Kanto">
+            android:label="Kanto"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Johto"
-            android:label="Johto">
+            android:label="Johto"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Hoenn"
-            android:label="Hoenn">
+            android:label="Hoenn"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Sinnoh"
-            android:label="Sinnoh">
+            android:label="Sinnoh"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Unima"
-            android:label="Unima">
+            android:label="Unima"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Kalos"
-            android:label="Kalos">
+            android:label="Kalos"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Alola"
-            android:label="Alola">
+            android:label="Alola"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".Galar"
-            android:label="Galar">
+            android:label="Galar"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".PokedexActivity"
-            android:label="PokedexActivity">
+            android:label="PokedexActivity"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".DettaglioPokemon"
-            android:label="DettaglioPokemon">
+            android:label="DettaglioPokemon"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
