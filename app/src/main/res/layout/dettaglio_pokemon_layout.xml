@@ -40,7 +40,8 @@
                 android:layout_marginTop="170dp"
                 android:backgroundTint="@color/white"
                 android:onClick="OnBackClick"
-                style="?android:attr/borderlessButtonStyle">
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/back">
             </Button>
 
             <Button
@@ -51,7 +52,8 @@
                 android:layout_marginTop="170dp"
                android:backgroundTint="@color/white"
                 android:onClick="OnForwardClick"
-                style="?android:attr/borderlessButtonStyle">
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/forward">
             </Button>
 
             <TextView
@@ -73,8 +75,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
-                android:background="#6F81A7"
+                android:background="@drawable/box_info_pokemon"
                 android:orientation="vertical"
+                android:paddingTop="15dp"
                 >
 
                 <LinearLayout

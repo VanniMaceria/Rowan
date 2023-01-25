@@ -156,7 +156,7 @@ public class Kanto extends Activity {
                     tipo.setBackgroundColor(Color.rgb(11, 101, 219));
                     break;
                 case "Elettro":
-                    tipo.setBackgroundColor(Color.rgb(229, 245, 7));
+                    tipo.setBackgroundColor(Color.rgb(253, 218, 13));
                     break;
                 case "Normale":
                     tipo.setBackgroundColor(Color.rgb(150, 150, 144));
