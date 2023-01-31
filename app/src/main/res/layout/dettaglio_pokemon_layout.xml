@@ -29,7 +29,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/_04_charmander">
+                android:src="@drawable/_04_charmander"
+                android:layout_marginBottom="5dp">
             </ImageView>
 
             <Button
@@ -39,7 +40,7 @@
                 android:layout_toLeftOf="@id/artworkBig"
                 android:layout_marginTop="170dp"
                 android:backgroundTint="@color/white"
-                android:onClick="OnBackClick"
+                android:onClick="onBackClick"
                 style="?android:attr/borderlessButtonStyle"
                 android:id="@+id/back">
             </Button>
@@ -51,22 +52,40 @@
                 android:layout_toRightOf="@id/artworkBig"
                 android:layout_marginTop="170dp"
                android:backgroundTint="@color/white"
-                android:onClick="OnForwardClick"
+                android:onClick="onForwardClick"
                 style="?android:attr/borderlessButtonStyle"
                 android:id="@+id/forward">
             </Button>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#000 Nome"
+                android:background="@drawable/forma_id"
+                android:id="@+id/idText"
+                android:layout_below="@id/artworkBig"
+                android:layout_toLeftOf="@id/nome"
+                android:text="#0"
+                android:textSize="35dp"
+                android:paddingHorizontal="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ubuntu_medium">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
                 android:textSize="35dp"
                 android:gravity="end"
                 android:id="@+id/nome"
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_below="@id/artworkBig"
-                android:fontFamily="@font/ubuntu_medium">
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp">
             </TextView>
 
             <LinearLayout
@@ -78,6 +97,7 @@
                 android:background="@drawable/box_info_pokemon"
                 android:orientation="vertical"
                 android:paddingTop="15dp"
+                android:layout_marginTop="8dp"
                 >
 
                 <LinearLayout
