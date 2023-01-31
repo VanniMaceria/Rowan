@@ -19,7 +19,8 @@ public class DettaglioPokemon extends Activity {
     DatabaseHandler dbHandler;
     Cursor cursor;
     ImageView artwork;
-    TextView idNome;
+    TextView idTv;
+    TextView nome;
     TextView tipo1;
     TextView tipo2;
     TextView altezza;
@@ -33,7 +34,6 @@ public class DettaglioPokemon extends Activity {
     /*
     * In questa classe aggiungi dei pulsanti per switchare la forma regionale, descrizione,
     * forma regionale shiny i tipi e le abilità
-    * Aggiungi delle freccette che ti fanno andare avanti e dietro
     * */
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -66,9 +66,12 @@ public class DettaglioPokemon extends Activity {
         Bitmap bitmap = BitmapFactory.decodeByteArray(img, 0, img.length);
         artwork.setImageBitmap(bitmap); //imposto l'artwork
 
-        idNome = new TextView(this);
-        idNome = findViewById(R.id.nome);
-        idNome.setText("#" + id + "    " + cursor.getString(2));
+        idTv = new TextView(this);
+        idTv = findViewById(R.id.idText);
+        idTv.setText("#" + id);
+
+        nome = findViewById(R.id.nome);
+        nome.setText(cursor.getString(2));
 
         tipo1 = new TextView(this);
         tipo1 = findViewById(R.id.dettaglioTipo1);
@@ -126,17 +129,18 @@ public class DettaglioPokemon extends Activity {
         }
     }
 
-    public void OnBackClick(View v){
+    public void onBackClick(View v){
         Intent i = new Intent(this, this.getClass());
         i.putExtra("id", id--);
+        i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
         startActivity(i);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);   //animazione slide da sx a dx
-
     }
 
-    public void OnForwardClick(View v){
+    public void onForwardClick(View v){
         Intent i = new Intent(this, this.getClass());
         i.putExtra("id", id++);
+        i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
         startActivity(i);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);    //animazione slide da dx a sx
     }

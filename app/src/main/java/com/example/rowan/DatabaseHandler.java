@@ -153,17 +153,23 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(fearow);
         Pokemon ekans = new Pokemon(23, "Ekans", "Veleno", null, 2.0F, 6.9F, "Prepotenza\nMuta", "Agitazione", "Serpente", "Si allunga sempre più con l’età. La notte si avvolge attorno a qualche ramo per dormire.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._23_ekans)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._23_ekansshiny)));
         addPokemon(ekans);
-        Pokemon arbok = new Pokemon(24, "Arbok", "Veleno", null,  3.5F, 65.0F, "Prepotenza\nMuta", "Agitazione", "Cobra", "Gli spaventosi disegni che ha sulla pancia sono oggetto di studio. Ne sono state scoperte sei diverse variazioni.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._23_ekans)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._23_ekansshiny)));
+        Pokemon arbok = new Pokemon(24, "Arbok", "Veleno", null,  3.5F, 65.0F, "Prepotenza\nMuta", "Agitazione", "Cobra", "Gli spaventosi disegni che ha sulla pancia sono oggetto di studio. Ne sono state scoperte sei diverse variazioni.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._24_arbok)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._24_arbokshiny)));
         addPokemon(arbok);
         Pokemon pikachu = new Pokemon(25, "Pikachu", "Elettro", null, 0.4F, 6.0F, "Statico", "Parafulmine", "Topo", "Quando s’arrabbia, libera subito l’energia accumulata nelle sacche sulle guance. Quando vari Pokémon di questa specie si radunano, la loro energia si accumula e genera fulmini.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._25_pikachu)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._25_pikachushiny)));
         addPokemon(pikachu);
         Pokemon raichu = new Pokemon(26, "Raichu", "Elettro", null, 0.8F, 30.0F, "Statico", "Parafulmine", "Topo", "La sua coda scarica elettricità a terra, proteggendolo dalle scosse elettriche. Quando le sacche elettriche sulle sue guance si caricano completamente, gli si rizzano le orecchie.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._26_raichu)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._26_raichushiny)));
         addPokemon(raichu);
+        Pokemon sandshrew = new Pokemon(27, "Sandshrew", "Terra", null, 0.6F, 12.0F, "Sabbiavelo", "Remasabbia", "Topo", "Ama rotolarsi nella sabbia delle zone desertiche, per rimuovere ogni traccia di sporcizia e umidità dal suo corpo. Scava nel terreno per costruire la sua tana, frantumando anche le rocce più dure con i suoi artigli affilati.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._27_sandshrew)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._27_sandshrewshiny)));
+        addPokemon(sandshrew);
+        Pokemon sandslash = new Pokemon(28, "Sandslash", "Terra", null, 1.0F, 29.5F, "Sabbiavelo", "Remasabbia", "Topo", "Più secco è il territorio dove Sandslash vive, più i suoi aculei dorsali diventano lisci e duri. Si arrampica sugli alberi utilizzando i suoi artigli affilati per poi condividere le bacche che trova con i Sandshrew, che aspettano sotto.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._28_sandslash)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._28_sandslashshiny)));
+        addPokemon(sandslash);
+
+
     }
 
     public Cursor selectAll(){
         String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + ";";
-        //per le select delle regioni credo posso fare una cosa tipo: SELECT * FROM Pokemon WHERE id < min %% id > max (Regione)
+        //per le select delle regioni credo posso fare una cosa tipo: SELECT * FROM Pokemon WHERE id < min && id > max (Regione)
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = null;
