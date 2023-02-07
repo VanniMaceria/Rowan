@@ -42,10 +42,12 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:background="@color/BlueDuck"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_below="@id/layoutFrontend"
         android:id="@+id/linea1">
     </FrameLayout>
@@ -83,12 +85,14 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:background="@color/BlueDuck"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
         android:layout_below="@id/layoutBackend"
-        android:id="@+id/linea2">
+        android:id="@+id/linea2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
     </FrameLayout>
 
     <TextView
@@ -115,7 +119,28 @@
             android:src="@drawable/androidstudiologo">
         </ImageView>
 
-
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Versione 0.0"
+        android:textSize="18dp"
+        android:layout_toLeftOf="@id/logo_android"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/logo_android"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/logo_android"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="2dp">
+    </ImageView>
 
 </RelativeLayout>
