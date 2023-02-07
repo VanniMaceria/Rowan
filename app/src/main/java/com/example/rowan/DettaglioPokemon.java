@@ -70,6 +70,7 @@ public class DettaglioPokemon extends Activity {
         idTv = findViewById(R.id.idText);
         idTv.setText("#" + id);
 
+        nome = new TextView(this);
         nome = findViewById(R.id.nome);
         nome.setText(cursor.getString(2));
 
