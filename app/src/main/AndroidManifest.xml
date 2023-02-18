@@ -93,14 +93,14 @@
         </activity>
 
         <activity
-            android:name=".PokedexActivity"
-            android:label="PokedexActivity"
+            android:name=".DettaglioPokemon"
+            android:label="DettaglioPokemon"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name=".DettaglioPokemon"
-            android:label="DettaglioPokemon"
+            android:name=".NotFound"
+            android:label="NotFound"
             android:screenOrientation="portrait">
         </activity>
     </application>

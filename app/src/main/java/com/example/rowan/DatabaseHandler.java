@@ -37,6 +37,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String COLONNA_DESCRIZIONE = "descrizione";
     private static final String COLONNA_ARTWORK = "artwork";
     private static final String COLONNA_ARTWORK_SHINY = "artworkShiny";
+    //tabella Regioni
+    private static final String TABELLA_REGIONI = "Regioni";
+    private static final String COLONNA_NOME_REGIONE = "nomeRegione";
+    //join table Appartenenza (M:N)
+    private static final String TABELLA_APPARTENENZA= "Appartenenza";
+    private static final String COLONNA_ID_REPLICA = "id";
+    private static final String COLONNA_NOME_REGIONE_REPLICA = "nomeRegione";
 
     public DatabaseHandler(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -163,13 +170,31 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(sandshrew);
         Pokemon sandslash = new Pokemon(28, "Sandslash", "Terra", null, 1.0F, 29.5F, "Sabbiavelo", "Remasabbia", "Topo", "Più secco è il territorio dove Sandslash vive, più i suoi aculei dorsali diventano lisci e duri. Si arrampica sugli alberi utilizzando i suoi artigli affilati per poi condividere le bacche che trova con i Sandshrew, che aspettano sotto.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._28_sandslash)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._28_sandslashshiny)));
         addPokemon(sandslash);
-
+        Pokemon nidoranF = new Pokemon(29, "Nidoran♀", "Veleno", null, 0.4F, 7.0F, "Velenopunte\nAntagonismo", "Tuttafretta", "Velenago", "È più sensibile agli odori rispetto ai maschi. Capta le correnti d’aria con le vibrisse e si posiziona sottovento per cercare le prede. Mangia le bacche frantumandole con i robusti incisivi. La punta del corno è leggermente più arrotondata rispetto a quella del maschio.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._29_nidoran)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._29_nidoranshiny)));
+        addPokemon(nidoranF);
+        Pokemon nidorina = new Pokemon(30, "Nidorina", "Veleno", null, 0.8F, 20.0F, "Velenopunte\nAntagonismo", "Tuttafretta", "Velenago", "Si pensa che il corno sulla fronte si sia atrofizzato per evitare che Nidorina punga i suoi cuccioli quando li nutre. Quando il branco è minacciato da un pericolo, i suoi membri uniscono le forze e dispiegano un coro di ultrasuoni.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._30_nidorina)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._30_nidorinashiny)));
+        addPokemon(nidorina);
+        Pokemon nidoqueen = new Pokemon(31, "Nidoqueen", "Veleno", "Terra", 1.3F, 60.0F, "Velenopunte\nAntagonismo", "Forzabruta", "Trapano", "Più abile nella difesa che nell’attacco, protegge i cuccioli da qualunque attacco grazie alla corazza di squame. Coccola i cuccioli mettendoseli sulla schiena negli spazi fra gli aculei, che in quei momenti smettono di secernere veleno.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._31_nidoqueen)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._31_nidoqueenshiny)));
+        addPokemon(nidoqueen);
+        Pokemon nidoranM = new Pokemon(32, "Nidoran♂", "Veleno", null, 0.5F, 9.0F, "Velenopunte\nAntagonismo", "Tuttafretta", "Velenago", "Il corno sulla fronte è estremamente velenoso. Di indole circospetta, rizza costantemente le sue grandi orecchie. Impavido nonostante la corporatura minuta, lotta con coraggio per proteggere la femmina a cui è affezionato, anche a costo della vita.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._32_nidoran)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._32_nidoranshiny)));
+        addPokemon(nidoranM);
+        Pokemon nidorino = new Pokemon(33, "Nidorino", "Veleno", null, 0.9F, 19.5F, "Velenopunte\nAntagonismo", "Tuttafretta", "Velenago", "Vaga alla ricerca di una Pietralunare frantumando rocce con il suo corno più duro del diamante. È irritabile e sempre pronto a battersi. Quando il livello di adrenalina nel suo corpo si alza, aumenta anche la concentrazione di tossine.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._33_nidorino)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._33_nidorinoshiny)));
+        addPokemon(nidorino);
+        Pokemon nidoking = new Pokemon(34, "Nidoking", "Veleno", "Terra", 1.4F, 62.0F, "Velenopunte\nAntagonismo", "Forzabruta", "Trapano", "Quando si scatena non c’è modo di fermarlo, ma davanti a Nidoqueen, la sua compagna di lunga data, ritrova la calma. Si dà vanto della propria forza e lotta con vigore sfruttando la coda robusta e il corno in grado di frantumare il diamante.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._34_nidoking)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._34_nidokingshiny)));
+        addPokemon(nidoking);
+        Pokemon clefairy = new Pokemon(35, "Clefairy", "Folletto", null, 0.6F, 7.5F, "Incantevole\nMagicscudo", "Amicoscudo", "Fata", "Si dice che vedere un gruppo di Clefairy ballare con la luna piena sia di ottimo auspicio. Il suo verso e le sue movenze graziose rendono questo adorabile Pokémon molto popolare. Sfortunatamente, però, è molto raro.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._35_clefairy)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._35_clefairyshiny)));
+        addPokemon(clefairy);
+        Pokemon clefable = new Pokemon(36, "Clefable", "Folletto", null, 1.3F, 40.0F, "Incantevole\nMagicscudo", "Imprudenza", "Fata", "Timido Pokémon Fata, molto raro a vedersi. Scappa e si nasconde non appena avverte la presenza delle persone. Il loro udito è così acuto che sentono un ago cadere a 1 km di distanza. Per questo di solito vivono in luoghi molto silenziosi.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._36_clefable)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._36_clefableshiny)));
+        addPokemon(clefable);
+        Pokemon vulpix = new Pokemon(37, "Vulpix", "Fuoco", null, 0.6F, 9.9F, "Fuocardore", "Siccità", "Volpe", "Quando è giovane ha sei meravigliose code, che si moltiplicano durante la sua crescita. La pelliccia di cui sono ricoperte è calda al tatto.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._37_vulpix)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._37_vulpixshiny)));
+        addPokemon(vulpix);
+        Pokemon ninetales = new Pokemon(38, "Ninetales", "Fuoco", null, 1.1F, 19.9F, "Fuocardore", "Siccità", "Volpe", "Dicono che viva un millennio. Ognuna delle sue code è dotata di un potere magico. Molto intelligente e vendicativo. Chi gli afferra una coda rischia una maledizione millenaria.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._38_ninetales)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._38_ninetalesshiny)));
+        addPokemon(ninetales);
 
     }
 
     public Cursor selectAll(){
         String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + ";";
-        //per le select delle regioni credo posso fare una cosa tipo: SELECT * FROM Pokemon WHERE id < min && id > max (Regione)
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = null;
@@ -189,6 +214,29 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             cursor = db.rawQuery(query, null);
         }
 
+        return cursor;
+    }
+
+    public Cursor selectByName(String nome){
+        String query = "SELECT * FROM " + TABELLA_POKEMON + " WHERE " + COLONNA_NOME + " = " + "'" + nome + "'" + ";";
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if(db != null){
+            cursor = db.rawQuery(query, null);
+        }
+
+        return cursor;
+    }
+
+    public Cursor selectAllFromKanto(){
+        String query = "SELECT * FROM " + TABELLA_POKEMON + " JOIN " + TABELLA_APPARTENENZA + " ON " + COLONNA_ID + " = " + COLONNA_ID_REPLICA + " WHERE " + COLONNA_NOME_REGIONE + " = Kanto;";
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if(db != null){
+            cursor = db.rawQuery(query, null);
+        }
         return cursor;
     }
 
