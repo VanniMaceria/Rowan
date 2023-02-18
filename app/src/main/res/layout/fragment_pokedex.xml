@@ -4,14 +4,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PokedexFragment"
-    android:background="@color/BlueDuck">
+    android:background="@color/white">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Pokèdex nazionale"
-        />
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/barra_di_ricerca"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Inserisci il nome del pokèmon"
+                        android:background="@drawable/barra_di_ricerca"
+                        android:layout_marginStart="5dp"
+                        android:drawableStart="@drawable/pokeball"
+                        android:drawablePadding="10dp"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/ubuntu_medium">
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/pulsanteCerca"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_baseline_search_24"
+                        android:background="@drawable/pulsante_cerca"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="2dp"
+                        >
+                    </ImageView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
 
 
+        </ScrollView>
+
+    </RelativeLayout>
 
 </FrameLayout>
