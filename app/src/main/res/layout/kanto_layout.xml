@@ -23,6 +23,46 @@
                 android:id="@+id/titolo">
             </TextView>
 
+            <FrameLayout
+                android:id="@+id/verde"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@id/titolo"
+                android:background="#4CBB17"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="10dp">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/rosso"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@id/verde"
+                android:background="#FF0000"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="3dp">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/blu"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@id/rosso"
+                android:background="#1F51FF"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="3dp">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/giallo"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@id/blu"
+                android:background="#FDDA0D"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="3dp">
+            </FrameLayout>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="400dp"

@@ -80,7 +80,7 @@ public class Kanto extends Activity {
                 layoutTipi.setLayoutParams(new ViewGroup.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
                 layoutTipi.setOrientation(LinearLayout.VERTICAL);
                 LinearLayout.LayoutParams layoutParamsTipi = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                layoutParamsTipi.setMargins(80, 6, 0, 0);
+                layoutParamsTipi.setMargins(80, 5, 0, 0);
                 layoutTipi.setLayoutParams(layoutParamsTipi);
 
                 contenitore.addView(layoutRigaPkmn);

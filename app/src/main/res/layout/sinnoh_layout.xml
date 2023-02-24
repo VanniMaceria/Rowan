@@ -16,6 +16,37 @@
         android:id="@+id/titolo">
     </TextView>
 
+    <FrameLayout
+        android:id="@+id/diamante"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_toRightOf="@id/titolo"
+        android:background="#4169E1"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="10dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/perla"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_toRightOf="@id/diamante"
+        android:background="#FAA0A0"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="3dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/platino"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_toRightOf="@id/perla"
+        android:background="#c1beba"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="3dp">
+    </FrameLayout>
+
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="400dp"
