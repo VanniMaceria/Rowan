@@ -277,7 +277,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         Pokemon magnemite = new Pokemon(81, "Magnemite", "Elettro", "Acciaio", 0.3F, 6.0F, "Vigore\nMagnetismo", "Ponderazione", "Calamita", "Le onde elettromagnetiche generate dagli elementi laterali neutralizzano la gravità permettendogli di levitare a mezz’aria.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._81_magnemite)),  convertToByteArray(ContextCompat.getDrawable(context, R.drawable._81_magnemiteshiny)));
         addPokemon(magnemite);
         Pokemon magnetone = new Pokemon(82, "Magnetone", "Elettro", "Acciaio", 1.0F, 60.0F, "Vigore\nMagnetismo", "Ponderazione", "Calamita", "Tre Magnemite sono uniti da una potente forza magnetica. Se ci si avvicina troppo, le orecchie fischiano. Si dice che i Magneton appaiano in gran numero quando ci sono molte macchie solari.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._82_magnetone)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._82_magnetoneshiny)));
-        addPokemon(magnetone);
+        addPokemon(magnetone);//
 
 
 
