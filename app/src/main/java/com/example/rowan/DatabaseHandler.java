@@ -276,8 +276,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(slowbro);
         Pokemon magnemite = new Pokemon(81, "Magnemite", "Elettro", "Acciaio", 0.3F, 6.0F, "Vigore\nMagnetismo", "Ponderazione", "Calamita", "Le onde elettromagnetiche generate dagli elementi laterali neutralizzano la gravità permettendogli di levitare a mezz’aria.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._81_magnemite)),  convertToByteArray(ContextCompat.getDrawable(context, R.drawable._81_magnemiteshiny)));
         addPokemon(magnemite);
-        Pokemon magnetone = new Pokemon(82, "Magnetone", "Elettro", "Acciaio", 1.0F, 60.0F, "Vigore\nMagnetismo", "Ponderazione", "Calamita", "Tre Magnemite sono uniti da una potente forza magnetica. Se ci si avvicina troppo, le orecchie fischiano. Si dice che i Magneton appaiano in gran numero quando ci sono molte macchie solari.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._82_magnetone)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._82_magnetoneshiny)));
-        addPokemon(magnetone);//
+        Pokemon magneton = new Pokemon(82, "Magneton", "Elettro", "Acciaio", 1.0F, 60.0F, "Vigore\nMagnetismo", "Ponderazione", "Calamita", "Tre Magnemite sono uniti da una potente forza magnetica. Se ci si avvicina troppo, le orecchie fischiano. Si dice che i Magneton appaiano in gran numero quando ci sono molte macchie solari.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._82_magnetone)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._82_magnetoneshiny)));
+        addPokemon(magneton);
+        Pokemon farfetchd = new Pokemon(83, "Farfetch'd", "Normale", "Volante", 0.8F, 15.0F, "Sgaurdofermo\nForza interiore", "Agonismo", "Selvanatra", "Colpisce gli avversari con un gambo, che brandisce con l’ala come se fosse una spada. In caso di necessità, può anche mangiarselo. Affronta i nemici usando il gambo di una pianta, brandendolo secondo stili diversi in base alla scuola di lotta che segue.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._83_farfetchd)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._83_farfetchdshiny)));
+        addPokemon(farfetchd);
 
 
 
