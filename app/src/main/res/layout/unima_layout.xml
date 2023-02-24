@@ -16,6 +16,39 @@
         android:id="@+id/titolo">
     </TextView>
 
+    <FrameLayout
+        android:id="@+id/bianco"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/titolo"
+        android:background="#EDEADE"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fuoco"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/nero"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/bianco"
+        android:background="#000000"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="3dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tuono"
+            android:layout_gravity="center">
+        </ImageView>
+    </FrameLayout>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="400dp"

@@ -184,7 +184,7 @@
                         android:layout_height="wrap_content"
                         android:text="000"
                         android:paddingVertical="5dp"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="5dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
                         android:fontFamily="@font/ubuntu_medium">
@@ -206,7 +206,7 @@
                         android:id="@+id/dettaglioPeso"
                         android:layout_width="85dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="5dp"
                         android:fontFamily="@font/ubuntu_medium"
                         android:paddingVertical="5dp"
                         android:text="000"

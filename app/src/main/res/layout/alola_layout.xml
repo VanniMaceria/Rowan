@@ -16,6 +16,26 @@
         android:id="@+id/titolo">
     </TextView>
 
+    <FrameLayout
+        android:id="@+id/sole"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_toRightOf="@id/titolo"
+        android:background="#EC5800"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="10dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/luna"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_toRightOf="@id/sole"
+        android:background="#5D3FD3"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="3dp">
+    </FrameLayout>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="400dp"
