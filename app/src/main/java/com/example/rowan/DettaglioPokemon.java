@@ -132,7 +132,8 @@ public class DettaglioPokemon extends Activity {
 
     public void onBackClick(View v){
         Intent i = new Intent(this, this.getClass());
-        i.putExtra("id", id--);
+        id = id - 1;
+        i.putExtra("id", id);
         i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
         startActivity(i);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);   //animazione slide da sx a dx
@@ -140,7 +141,8 @@ public class DettaglioPokemon extends Activity {
 
     public void onForwardClick(View v){
         Intent i = new Intent(this, this.getClass());
-        i.putExtra("id", id++);
+        id = id + 1;
+        i.putExtra("id", id);
         i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
         startActivity(i);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);    //animazione slide da dx a sx
@@ -181,7 +183,7 @@ public class DettaglioPokemon extends Activity {
                     tipo.setBackgroundColor(Color.rgb(148, 76, 16));
                     break;
                 case "Volante":
-                    tipo.setBackgroundColor(Color.rgb(149, 245, 240));
+                    tipo.setBackgroundColor(Color.rgb(100, 149, 237));
                     break;
                 case "Psico":
                     tipo.setBackgroundColor(Color.rgb(168, 5, 227));

@@ -280,9 +280,28 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(magneton);
         Pokemon farfetchd = new Pokemon(83, "Farfetch'd", "Normale", "Volante", 0.8F, 15.0F, "Sgaurdofermo\nForza interiore", "Agonismo", "Selvanatra", "Colpisce gli avversari con un gambo, che brandisce con l’ala come se fosse una spada. In caso di necessità, può anche mangiarselo. Affronta i nemici usando il gambo di una pianta, brandendolo secondo stili diversi in base alla scuola di lotta che segue.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._83_farfetchd)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._83_farfetchdshiny)));
         addPokemon(farfetchd);
-
-
-
+        Pokemon doduo = new Pokemon(84, "Doduo", "Normale", "Volante", 1.4F, 39.2F, "Fugafacile\nSveglialampo", "Intricopiedi", "Biuccello", "Le cortissime ali non gli permettono di volare. Può tuttavia correre velocissimo grazie alle zampe ben sviluppate.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._84_doduo)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._84_doduoshiny)));
+        addPokemon(doduo);
+        Pokemon dodrio = new Pokemon(85, "Dodrio", "Normale", "Volante", 1.8F, 85.2F, "Fugafacile\nSveglialampo", "Intricopiedi", "Triuccello", "Un Doduo si evolve in Dodrio quando una delle due teste si divide. Lo si vede sfrecciare per le praterie a 60 km/h.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._85_dodrio)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._85_dodrioshiny)));
+        addPokemon(dodrio);
+        Pokemon seel = new Pokemon(86, "Seel", "Acqua", null, 1.1F, 90.0F, "Grassospesso\nIdratazione", "Corpogelo", "Otaria", "Adora gli ambienti gelidi. Nuota con piacere nell’acqua a temperature di circa -10 ºC.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._86_seel)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._86_seelshiny)));
+        addPokemon(seel);
+        Pokemon dewgong = new Pokemon(87, "Dewgong", "Acqua", "Ghiaccio", 1.7F, 120.0F, "Grassospesso\nIdratazione", "Corpogelo", "Otaria", "Il suo corpo è bianco come la neve. Non soffre il freddo e nuota senza problemi anche in acque gelide.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._87_dewgong)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._87_dewgongshiny)));
+        addPokemon(dewgong);
+        Pokemon grimer = new Pokemon(88, "Grimer", "Veleno", null, 0.9F, 30.0F, "Tanfo\nAntifurto", "Velentocco", "Melma", "Un Pokémon nato dalla melma. Predilige i posti sporchi perché gli permettono di aumentare la sua carica batterica. Quando due esemplari combinano i propri corpi, creano nuovi tipi di veleno.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._88_grimer)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._88_grimershiny)));
+        addPokemon(grimer);
+        Pokemon muk = new Pokemon(89, "Muk", "Veleno", null, 1.2F, 30.0F,  "Tanfo\nAntifurto", "Velentocco", "Melma", "Coperto di melma sudicia, è così tossico che persino le sue impronte sono velenose. Ha un odore estremamente sgradevole e il suo corpo è un concentrato di veleni. Non c’è pianta che rimanga in vita dopo il suo passaggio.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._89_muk)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._89_mukshiny)));
+        addPokemon(muk);
+        Pokemon shellder = new Pokemon(90, "Shellder", "Acqua", null, 0.3F, 4.0F, "Guscioscudo\nAbillegame", "Copricapo", "Bivalve", "La conchiglia esterna è più dura del diamante. L’interno, invece, è sorprendentemente morbido. Quando attanaglia il nemico con le due valve il molle interno rimane esposto, perciò usa questa tecnica solo come ultima risorsa.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._90_shellder)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._90_shelldershiny)));
+        addPokemon(shellder);
+        Pokemon cloyster = new Pokemon(91, "Cloyster", "Acqua", "Ghiaccio", 1.5F, 132.5F, "Guscioscudo\nAbillegame", "Copricapo", "Bivalve", "Ai Cloyster che vivono in mari con forti correnti crescono grandi aculei appuntiti sul guscio. Se attaccato, scaglia gli aculei di cui è dotato in rapida successione. Nessuno sa cosa si celi al suo interno.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._91_cloyster)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._91_cloystershiny)));
+        addPokemon(cloyster);
+        Pokemon gastly = new Pokemon(92, "Gastly", "Spettro", "Veleno", 1.3F, 0.1F, "Levitazione", null, "Gas", "Avvolge le prede nel corpo gassoso e le indebolisce lentamente facendo penetrare il veleno nella loro pelle.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._92_gastly)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._92_gastlyshiny)));  //Pierre Gastly
+        addPokemon(gastly);
+        Pokemon haunter = new Pokemon(93, "Haunter", "Spettro", "Veleno", 1.6F, 0.1F, "Levitazione", null, "Gas", "Adora stare in agguato nei luoghi bui e toccare le spalle delle vittime con le sue mani gassose. Il suo tocco causa brividi incontenibili.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._93_haunter)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._93_hauntershiny)));
+        addPokemon(haunter);
+        Pokemon gengar = new Pokemon(94, "Gengar", "Spettro", "Veleno", 1.5F, 40.5F, "Corpofunesto", null, "Ombra", "Per sottrarre energia alla vittima si nasconde nella sua ombra e attende in silenzio il momento opportuno. Di notte si cela nell’ombra delle persone per assorbirne il calore poco a poco, provocando loro tremiti irrefrenabili.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._94_gengar)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._94_gengarshiny)));
+        addPokemon(gengar);
     }
 
 
