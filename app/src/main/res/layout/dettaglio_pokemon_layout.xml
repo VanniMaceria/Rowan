@@ -204,7 +204,7 @@
 
                     <TextView
                         android:id="@+id/dettaglioPeso"
-                        android:layout_width="85dp"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="5dp"
                         android:fontFamily="@font/ubuntu_medium"

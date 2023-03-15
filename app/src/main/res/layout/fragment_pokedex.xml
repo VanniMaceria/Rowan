@@ -31,10 +31,12 @@
                         android:hint="Inserisci il nome del pokèmon"
                         android:background="@drawable/barra_di_ricerca"
                         android:layout_marginStart="5dp"
+                        android:singleLine="true"
                         android:drawableStart="@drawable/pokeball"
                         android:drawablePadding="10dp"
                         android:textSize="15dp"
-                        android:fontFamily="@font/ubuntu_medium">
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:imeOptions="actionDone">
                     </EditText>
 
                     <ImageView

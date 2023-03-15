@@ -5,11 +5,14 @@ import android.database.Cursor;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class PokedexFragment extends Fragment {
@@ -25,6 +28,7 @@ public class PokedexFragment extends Fragment {
         dbHandler = new DatabaseHandler(getContext());
         barraDiRicerca = root.findViewById(R.id.barra_di_ricerca);
         button = root.findViewById(R.id.pulsanteCerca);
+
         button.setOnClickListener(view -> {
             String nome = barraDiRicerca.getText().toString();
             Cursor cursor = dbHandler.selectByName(nome);
@@ -41,6 +45,16 @@ public class PokedexFragment extends Fragment {
                 //Pagina not found
                 Intent i = new Intent(getContext(), NotFound.class);
                 startActivity(i);
+            }
+        });
+
+        //quando clicco "enter" simulo il click del pulsante
+        barraDiRicerca.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
+                    button.performClick();
+                }
+                return false;
             }
         });
 
