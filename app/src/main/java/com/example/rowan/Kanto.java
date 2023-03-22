@@ -102,18 +102,18 @@ public class Kanto extends Activity {
                 id.setText("#" + cursor.getInt(1));
                 id.setTextColor(Color.WHITE);
                 id.setGravity(Gravity.START);
-                id.setTextSize(25);
+                id.setTextSize(23);
                 Typeface font = getResources().getFont(R.font.ubuntu_medium);
                 id.setTypeface(font);
-                id.setPadding(0, 15, 0, 0);
-                id.setWidth(130);
+                id.setPadding(0, 18, 0, 0);
+                id.setWidth(150);
 
                 //retrieve del nome
                 nomePkmn.setText(cursor.getString(2));
                 nomePkmn.setTextColor(Color.WHITE);
                 nomePkmn.setGravity(Gravity.START);
-                nomePkmn.setTextSize(25);
-                nomePkmn.setPadding(40, 0, 0, 0);
+                nomePkmn.setTextSize(23);
+                nomePkmn.setPadding(40, 18, 0, 0);
                 nomePkmn.setWidth(450);
                 nomePkmn.setTypeface(font);
 

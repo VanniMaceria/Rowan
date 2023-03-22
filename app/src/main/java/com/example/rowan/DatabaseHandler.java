@@ -302,6 +302,26 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(haunter);
         Pokemon gengar = new Pokemon(94, "Gengar", "Spettro", "Veleno", 1.5F, 40.5F, "Corpofunesto", null, "Ombra", "Per sottrarre energia alla vittima si nasconde nella sua ombra e attende in silenzio il momento opportuno. Di notte si cela nell’ombra delle persone per assorbirne il calore poco a poco, provocando loro tremiti irrefrenabili.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._94_gengar)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._94_gengarshiny)));
         addPokemon(gengar);
+        Pokemon onix = new Pokemon(95, "Onix", "Roccia", "Terra", 8.8F, 210.0F, "Testadura\nVigore", "Sottilguscio", "Serpesasso", "Scava nel terreno a una velocità di 80 km/h assorbendo gli oggetti più duri per irrobustire il suo corpo.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._95_onix)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._95_onixshiny)));
+        addPokemon(onix);
+        Pokemon drowzee = new Pokemon(96, "Drowzee", "Psico", null, 1.0F, 23.0F, "Insonnia\nPremonizione", "Forza interiore", "Ipnosi", "Quando fiuta con il suo grande naso, riesce a localizzare chi dorme e a capire che sogni sta facendo. Ricorda ogni singolo sogno che mangia. Mangia raramente i sogni degli adulti, perché quelli dei bambini sono più buoni.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._96_drowzee)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._96_drowzeeshiny)));
+        addPokemon(drowzee);
+        Pokemon hypno = new Pokemon(97, "Hypno", "Psico", null, 1.6F, 75.6F, "Insonnia\nPremonizione", "Forza interiore", "Ipnosi", "Quando cattura lo sguardo del nemico, usa una varietà di poteri psichici come, ad esempio, l’ipnosi. Ha sempre con sé un pendolo che agita a ritmo regolare. Fa assopire chiunque gli si avvicini.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._97_hypno)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._97_hypnoshiny)));
+        addPokemon(hypno);
+        Pokemon krabby = new Pokemon(98, "Krabby", "Acqua", null, 0.4F, 6.5F, "Guscioscudo\nIpertaglio", "Forzabruta", "Granchio", "Lo si può trovare vicino al mare. Le grandi chele, se si staccano, ricrescono. Se si sente in pericolo, emette bolle dalla bocca e se ne circonda per sembrare più grande.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._98_krabby)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._98_krabbyshiny)));
+        addPokemon(krabby);
+        Pokemon kingler = new Pokemon(99, "Kingler", "Acqua", null, 1.3F, 60.0F, "Guscioscudo\nIpertaglio", "Forzabruta", "Chela", "La chela più grande sprigiona una potenza di 10.000 CV. Le dimensioni gli rendono difficili gli spostamenti.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._99_kingler)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._99_kinglershiny)));
+        addPokemon(kingler);
+        Pokemon voltorb = new Pokemon(100, "Voltorb", "Elettro", null, 0.5F, 10.4F, "Statico\nAntisuono", "Scoppio", "Ball", "Rotola per spostarsi. Se il terreno è irregolare, può esplodere all’improvviso a causa dell’urto contro un dosso. Solitamente si aggira nelle centrali elettriche e luoghi simili. Molti lo confondono con una Poké Ball, finendo folgorati.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._00_voltorb)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._01_voltorbshiny)));
+        addPokemon(voltorb);
+        Pokemon electrode = new Pokemon(101, "Electrode", "Elettro", null, 1.2F, 66.6F, "Statico\nAntisuono", "Scoppio", "Ball", "L’energia Elettro che immagazzina lo fa andare sempre più veloce, ma lo fa anche esplodere più facilmente. Temuto da tutti, è conosciuto con il nomignolo di “Bomba Ball”.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._01_electrode)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._01_electrodeshiny)));
+        addPokemon(electrode);
+        Pokemon exeggcute = new Pokemon(102, "Exeggcute", "Erba", "Psico", 0.4F, 2.5F, "Clorofilla", "Coglibacche", "Uovo", "Somiglia a un mucchio di uova, ma è un Pokémon a tutti gli effetti. Pare che comunichi con i suoi simili telepaticamente. Se non sono presenti tutti e sei gli individui che lo compongono, non è tranquillo. Appena ne sparisce uno si prepara alla fuga.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._02_exeggcute)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._02_exeggcuteshiny)));
+        addPokemon(exeggcute);
+        Pokemon exeggutor = new Pokemon(103, "Exeggutor", "Erba", "Psico", 2.0F, 120.F, "Clorofilla", "Coglibacche", "Nocecocco", "Le sue tre teste ragionano in modo indipendente. Sembra che ciascuna pensi solo a sé. I poteri psichici che le sue tre teste scatenano all’unisono sono travolgenti. Quando il cielo si rannuvola, i suoi movimenti si fanno lenti.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._03_exeggutor)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._03_exeggutorshiny)));
+        addPokemon(exeggutor);
+
+
     }
 
 
