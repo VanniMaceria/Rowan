@@ -13,8 +13,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class DettaglioPokemon extends Activity {
+public class DettaglioPokemon extends AppCompatActivity {
     int id;
     DatabaseHandler dbHandler;
     Cursor cursor;
