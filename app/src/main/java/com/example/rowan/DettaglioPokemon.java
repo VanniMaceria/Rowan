@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -134,19 +136,43 @@ public class DettaglioPokemon extends AppCompatActivity {
     public void onBackClick(View v){
         Intent i = new Intent(this, this.getClass());
         id = id - 1;
-        i.putExtra("id", id);
-        i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-        startActivity(i);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);   //animazione slide da sx a dx
+
+        if(id < 1){
+            Toast.makeText(this, "Non puoi andare oltre", Toast.LENGTH_SHORT).show();
+            id = id + 1;
+            i.putExtra("id", id);
+            i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(i);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+        }
+
+        else{
+            i.putExtra("id", id);
+            i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(i);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);   //animazione slide da sx a dx
+        }
     }
 
     public void onForwardClick(View v){
         Intent i = new Intent(this, this.getClass());
         id = id + 1;
-        i.putExtra("id", id);
-        i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-        startActivity(i);
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);    //animazione slide da dx a sx
+
+        if(id > 905){   //questo lo devo aggiornare man mano che escono nuovi pokèmon
+            Toast.makeText(this, "Non puoi andare oltre", Toast.LENGTH_SHORT).show();
+            id = id - 1;
+            i.putExtra("id", id);
+            i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(i);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+        }
+
+        else{
+            i.putExtra("id", id);
+            i.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(i);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);    //animazione slide da dx a sx
+        }
     }
 
     public void cambiaColoreTipo(TextView tipo){

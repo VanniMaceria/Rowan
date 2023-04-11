@@ -18,6 +18,10 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.core.widget.NestedScrollView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Kanto extends Activity {
     DatabaseHandler dbHandler;
 
