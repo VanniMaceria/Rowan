@@ -29,6 +29,7 @@ public class PokedexFragment extends Fragment {
         barraDiRicerca = root.findViewById(R.id.barra_di_ricerca);
         button = root.findViewById(R.id.pulsanteCerca);
 
+        //ricerca pokèmon per nome
         button.setOnClickListener(view -> {
             String nome = barraDiRicerca.getText().toString();
             Cursor cursor = dbHandler.selectByName(nome);
@@ -46,7 +47,7 @@ public class PokedexFragment extends Fragment {
                 Intent i = new Intent(getContext(), NotFound.class);
                 startActivity(i);
             }
-        });
+        });//
 
         //quando clicco "enter" simulo il click del pulsante
         barraDiRicerca.setOnEditorActionListener(new TextView.OnEditorActionListener() {

@@ -340,8 +340,18 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(rhydon);
         Pokemon chansey = new Pokemon(113, "Chansey", "Normale", null, 1.1F, 34.6F, "Alternacura\nLeggiadro", "Curacuore", "Uovo", "Un Pokémon altruista che depone uova molto nutrienti e le condivide con persone o Pokémon feriti. Cammina con prudenza per non rompere il suo uovo. Tuttavia, può fuggire con estrema rapidità.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._13_chansey)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._13_chanseyshiny)));
         addPokemon(chansey);
-
-
+        Pokemon tangela = new Pokemon(114, "Tangela", "Erba", null, 1.0F, 35.0F, "Clorofilla\nFogliamanto", "Rigenergia", "Liana", "Non è ancora chiaro quale sia il vero aspetto celato dietro alle sue liane, che crescono all’infinito anche dopo essere state recise. Le sue liane emanano un odore peculiare. In alcune zone di Galar vengono usate come erbe aromatiche.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._14_tangela)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._14_tangelashiny)));
+        addPokemon(tangela);
+        Pokemon kangaskhan = new Pokemon(115, "Kangaskhan", "Normale", null, 2.2F, 80.0F, "Sveglialampo\nNervisaldi", "Forza interiore", "Genitore", "Ha un agile gioco di gambe, nonostante si porti appresso il cucciolo nel marsupio ventrale. Intimidisce gli avversari con jab velocissimi. Alcuni documenti parlano di Kangaskhan senza cuccioli che hanno allevato bambini umani dispersi.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._15_kangaskhan)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._15_kangaskhanshiny)));
+        addPokemon(kangaskhan);
+        Pokemon horsea = new Pokemon(116, "Horsea", "Acqua", null, 0.4F, 8.0F, "Nuotovelox\nCecchino", "Umidità", "Drago", "Vive in mari dalle correnti tranquille. Quando viene attaccato spruzza inchiostro nero e ne approfitta per fuggire. Nuota come se danzasse nell’acqua creando mulinelli. Gioca con i suoi simili facendo a gara a chi ne crea di più grandi.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._16_horsea)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._16_horseashiny)));
+        addPokemon(horsea);
+        Pokemon seadra = new Pokemon(117, "Seadra", "Acqua", null, 1.2F, 25.0F, "Velenopunte\nCecchino", "Umidità", "Drago", "Il maschio si occupa dei piccoli. Quando li alleva, il veleno degli aculei dorsali diventa denso e potente. Nonostante la misura ridotta, la sua bocca ha un potere aspirante tale da permettergli di risucchiare e inghiottire grosse prede all’istante.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._17_seadra)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._17_seadrashiny)));
+        addPokemon(seadra);
+        Pokemon goldeen = new Pokemon(118, "Goldeen", "Acqua", null, 0.6F, 15.0F, "Nuotovelox\nIdrovelo", "Parafulmine", "Pescerosso", "Le pinne su dorso, petto e coda ondeggiano con grazia. Perciò viene chiamato 'danzatore d’acqua'. Le pinne dorsali e pettorali sono sviluppate come potenti muscoli. Può raggiungere la velocità di 5 nodi.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._18_goldeen)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._18_goldeenshiny)));
+        addPokemon(goldeen);
+        Pokemon seaking = new Pokemon(119, "Seaking", "Acqua", null, 1.3F, 39.0F, "Nuotovelox\nIdrovelo", "Parafulmine", "Pescerosso", "In autunno ingrassa in previsione della stagione degli amori e assume colori sgargianti. Perfora con il suo corno le rocce sul letto dei fiumi, costruendo tane che proteggono le Uova dalla corrente.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._19_seaking)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._19_seakingshiny)));
+        addPokemon(seaking);
 
 
 
