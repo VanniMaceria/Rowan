@@ -175,6 +175,10 @@ public class DettaglioPokemon extends AppCompatActivity {
         }
     }
 
+    public void goBack(View v){
+        onBackPressed();
+    }
+
     public void cambiaColoreTipo(TextView tipo){
         if(tipo.getText().toString().equals("null")) {
             tipo.setTextColor(Color.rgb(111, 129, 167));
