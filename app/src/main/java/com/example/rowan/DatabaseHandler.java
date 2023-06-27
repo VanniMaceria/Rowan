@@ -352,6 +352,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(goldeen);
         Pokemon seaking = new Pokemon(119, "Seaking", "Acqua", null, 1.3F, 39.0F, "Nuotovelox\nIdrovelo", "Parafulmine", "Pescerosso", "In autunno ingrassa in previsione della stagione degli amori e assume colori sgargianti. Perfora con il suo corno le rocce sul letto dei fiumi, costruendo tane che proteggono le Uova dalla corrente.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._19_seaking)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._19_seakingshiny)));
         addPokemon(seaking);
+        Pokemon staryu = new Pokemon(120, "Staryu", "Acqua", null, 0.8F, 34.5F, "Alternacura\nRisplendi", "Ponderazione", "Stella", "Alla fine dell’estate, sui litorali è possibile osservare gruppi di Staryu che emettono luce a un ritmo regolare. Viene mangiucchiato dai Pokémon acquatici, ma non ci dà peso, perché le parti danneggiate del suo corpo si rigenerano subito.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._20_staryu)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._20_staryushiny)));
+        addPokemon(staryu);
+        Pokemon starmie = new Pokemon(121, "Starmie", "Acqua", "Psico", 1.1F, 80.0F, "Alternacura\nRisplendi", "Ponderazione", "Misterioso", "Quando scatena i suoi poteri psichici, l’organo centrale, detto nucleo, brilla di sette colori diversi. Risucchia il plancton mentre nuota nel mare facendo ruotare il suo corpo ad alta velocità.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._21_starmie)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._21_starmieshiny)));
+        addPokemon(starmie);
 
 
 
