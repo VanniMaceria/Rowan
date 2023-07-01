@@ -356,6 +356,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(staryu);
         Pokemon starmie = new Pokemon(121, "Starmie", "Acqua", "Psico", 1.1F, 80.0F, "Alternacura\nRisplendi", "Ponderazione", "Misterioso", "Quando scatena i suoi poteri psichici, l’organo centrale, detto nucleo, brilla di sette colori diversi. Risucchia il plancton mentre nuota nel mare facendo ruotare il suo corpo ad alta velocità.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._21_starmie)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._21_starmieshiny)));
         addPokemon(starmie);
+        Pokemon mrmime = new Pokemon(122, "Mr. Mime", "Psico", "Folletto", 1.3F, 54.0F, "Antisuono\nFiltro", "Tecnico", "Barriera", "È un esperto di mimica che, con i gesti, riesce a innalzare pareti che diventano reali. Con le onde che emette dalla punta delle dita solidifica l’aria e crea pareti invisibili che respingono gli attacchi più violenti.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._22_mrmime)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._22_mrmimeshiny)));
+        addPokemon(mrmime);
+        Pokemon scyther = new Pokemon(123, "Scyther", "Coleottero", "Volante", 1.5F, 56.0F, "Aiutinsetto\nTecnico", "Cuordeciso", "Mantide", "Si fa strada tra l’erba grazie alle lame affilate, muovendosi troppo velocemente per l’occhio umano. Le falci sulle sue zampe anteriori diventano sempre più affilate man mano che tranciano oggetti duri.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._23_scyther)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._23_scythershiny)));
+        addPokemon(scyther);
+        Pokemon jynx = new Pokemon(124, "Jynx", "Ghiaccio", "Psico", 1.4F, 40.6F, "Indifferenza\nPremonizione", "Pellearsa", "Umanoide", "In una certa zona di Galar, Jynx era temuto e venerato dagli abitanti, che lo chiamavano 'Regina dei ghiacci'. La maggior parte dei Jynx di Galar hanno una voce talmente incantevole e delicata da avere addirittura dei fan.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._24_jynx)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._24_jynxshiny)));
+        addPokemon(jynx);
+
 
 
 
@@ -414,6 +421,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] bitmapData = stream.toByteArray();
+
         return bitmapData;
     }
 
