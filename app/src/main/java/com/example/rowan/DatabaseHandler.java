@@ -20,7 +20,7 @@ import java.io.ByteArrayOutputStream;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
     private Context context;
-    private static int DATABASE_VERSION = 22;
+    private static int DATABASE_VERSION = 23;
     private static final String DATABASE_NAME = "RowanDB";
     //tabella Pokèmon
     private static final String TABELLA_POKEMON = "Pokemon";
@@ -362,6 +362,18 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(scyther);
         Pokemon jynx = new Pokemon(124, "Jynx", "Ghiaccio", "Psico", 1.4F, 40.6F, "Indifferenza\nPremonizione", "Pellearsa", "Umanoide", "In una certa zona di Galar, Jynx era temuto e venerato dagli abitanti, che lo chiamavano 'Regina dei ghiacci'. La maggior parte dei Jynx di Galar hanno una voce talmente incantevole e delicata da avere addirittura dei fan.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._24_jynx)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._24_jynxshiny)));
         addPokemon(jynx);
+        Pokemon electabuzz = new Pokemon(125, "Electabuzz", "Elettro", null, 1.1F, 30.0F, "Statico", "Spiritovivo", "Elettrico", "Molte centrali elettriche utilizzano Pokémon di tipo Terra per difendersi dagli Electabuzz a caccia di elettricità. All’arrivo di un temporale questi Pokémon si raggruppano intorno agli alberi alti, aspettando immobili che cada un fulmine.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._25_electabuzz)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._25_electabuzzshiny)));
+        addPokemon(electabuzz);
+        Pokemon magmar = new Pokemon(126, "Magmar", "Fuoco", null, 1.3F, 44.5F, "Corpodifuoco", "Spiritovivo", "Sputafuoco", "Abbatte le sue prede con le fiamme, ma finisce per carbonizzarle accidentalmente, con suo grande rammarico. Il suo corpo è perennemente in fiamme. Viene considerato una delle cause degli incendi, e per questo è temuto.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._26_magmar)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._26_magmarshiny)));
+        addPokemon(magmar);
+        Pokemon pinsir = new Pokemon(127, "Pinsir", "Coleottero", null, 1.5F, 55.0F, "Ipertaglio\nRompiforma", "Arroganza", "Cervolante", "I Pinsir si giudicano a vicenda in base alle corna. Quelli con corna grosse e imponenti hanno più successo con gli esemplari dell’altro sesso. Afferra le prede con le corna e le trancia in due, oppure le lancia via con violenza.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._27_pinsir)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._27_pinsirshiny)));
+        addPokemon(pinsir);
+        Pokemon tauros = new Pokemon(128, "Tauros", "Normale", null, 1.4F, 88.4F, "Prepotenza\nGrancollera", "Forzabruta", "Torobrado", "Dopo aver puntato la preda, la carica a testa bassa. È noto per la sua indole violenta.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._28_tauros)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._28_taurosshiny)));
+        addPokemon(tauros);
+        Pokemon magikarp = new Pokemon(129, "Magikarp", "Acqua", null, 0.9F, 10.0F, "Nuotovelox", "Paura", "Pesce", "Un Pokémon debole e patetico. Nelle rare occasioni in cui spicca alti salti, non riesce comunque a raggiungere i due metri. Pare che anticamente fosse un tantino più forte. Oggi è così debole da fare quasi pena.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._29_magikarp)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._29_magikarpshiny)));
+        addPokemon(magikarp);
+        Pokemon gyarados = new Pokemon(130, "Gyarados", "Acqua", "Volante", 6.5F, 235.0F, "Prepotenza", "Arroganza", "Atroce", "Quando esce allo scoperto in preda alla furia, non si placa finché non ha raso al suolo ogni cosa. Quando nel mondo regnano i conflitti, appare dal nulla e mette a ferro e fuoco tutto ciò che incontra sul proprio cammino.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._30_gyarados)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._30_gyaradosshiny)));
+        addPokemon(gyarados);
 
 
 
