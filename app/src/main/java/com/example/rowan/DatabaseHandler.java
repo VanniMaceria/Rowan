@@ -374,7 +374,19 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(magikarp);
         Pokemon gyarados = new Pokemon(130, "Gyarados", "Acqua", "Volante", 6.5F, 235.0F, "Prepotenza", "Arroganza", "Atroce", "Quando esce allo scoperto in preda alla furia, non si placa finché non ha raso al suolo ogni cosa. Quando nel mondo regnano i conflitti, appare dal nulla e mette a ferro e fuoco tutto ciò che incontra sul proprio cammino.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._30_gyarados)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._30_gyaradosshiny)));
         addPokemon(gyarados);
-
+        Pokemon lapras = new Pokemon(131, "Lapras", "Acqua", "Ghiaccio", 2.5F, 220.0F, "Assorbacqua\nGuscioscudo", "Idratazione", "Trasporto", "Ama attraversare il mare con persone e Pokémon sul suo dorso. Capisce il linguaggio umano.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._31_lapras)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._31_laprasshiny)));
+        addPokemon(lapras);
+        Pokemon ditto = new Pokemon(132, "Ditto", "Normale", null, 0.3F, 4.0F, "Scioltezza", "Sosia", "Mutante", "Sa trasformarsi in maniera perfetta, ma se lo si fa ridere perde subito il travestimento. Può ricombinare a piacere la propria struttura cellulare per trasformarsi in altre forme di vita.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._32_ditto)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._32_dittoshiny)));
+        addPokemon(ditto);
+        Pokemon eevee = new Pokemon(133, "Eevee", "Normale", null, 0.3F, 6.5F, "Fugafacile\nAdattabilità", "Presagio", "Evoluzione", "La capacità di evolversi in diverse specie gli permette di adattarsi perfettamente a qualsiasi tipo di ambiente. A causa del suo codice genetico anomalo, può trasformarsi improvvisamente se esposto alle radiazioni emesse dalle pietre.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._33_eevee)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._33_eeveeshiny)));
+        addPokemon(eevee);
+        Pokemon vaporeon = new Pokemon(134, "Vaporeon", "Acqua", null, 1.0F, 29.0F, "Assorbacqua", "Idratazione", "Bollajet", "Vive vicino all’acqua. Sulla punta della coda ha una pinna, per questo alcuni lo scambiano per una sirena. La sua composizione cellulare è simile a quella delle molecole d’acqua, in cui si può dissolvere diventando invisibile.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._34_vaporeon)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._34_vaporeonshiny)));
+        addPokemon(vaporeon);
+        Pokemon jolteon = new Pokemon(135, "Jolteon", "Elettro", null, 0.8F, 24.5F, "Assorbivolt", "Piedisvelti", "Luminoso", "Concentra la debole carica elettrica emessa dalle sue cellule per lanciare potenti scariche. Quando si agita, usa l’elettricità per rizzare i peli e scagliarli in piccoli nugoli.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._35_jolteon)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._35_jolteonshiny)));
+        addPokemon(jolteon);
+        Pokemon flareon = new Pokemon(136, "Flareon", "Fuoco", null, 0.9F, 25.0F, "Fuocardore", "Dentistretti", "Fiamma", "L’aria che inspira si infiamma passando per la sacca ardente che ha nel corpo, per poi essere espirata alla temperatura di 1.700 ºC. Arruffa il folto pelo intorno al collo per raffreddare il corpo, che può raggiungere i 900 ºC.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._36_flareon)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._36_flareonshiny)));
+        addPokemon(flareon);
+        
 
 
 
