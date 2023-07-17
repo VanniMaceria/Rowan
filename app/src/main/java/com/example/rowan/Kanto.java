@@ -3,7 +3,6 @@ package com.example.rowan;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -11,16 +10,11 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.core.widget.NestedScrollView;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Kanto extends Activity {
     DatabaseHandler dbHandler;
@@ -37,7 +31,7 @@ public class Kanto extends Activity {
     public void displayData() {
         LinearLayout contenitore = findViewById(R.id.contenitore);  //contiene tutte le view delle righe dei pkmn
 
-         Cursor cursor = dbHandler.selectAll();
+        Cursor cursor = dbHandler.selectAllFromKanto();
         if (cursor.getCount() == 0) {
             Log.d("MYTAG", "NON CI SONO PKMN");
         }
@@ -46,13 +40,13 @@ public class Kanto extends Activity {
             while (cursor.moveToNext()) {
                 //inizializzo tutti i layout e le view che mi servono
                 LinearLayout layoutRigaPkmn = new LinearLayout(getApplicationContext());    //è contenuto in contenitore
-                    ImageView artwork = new ImageView(this);    //è contenuto in layoutRigaPkmn
-                    LinearLayout layoutRigaColorata = new LinearLayout(getApplicationContext());    // è contenuto in layoutRigaPkmn
-                        TextView id = new TextView(this);  //è contenuto in layoutRigaColorata
-                        TextView nomePkmn = new TextView(getApplicationContext());  //è contenuto in layoutRigaColorata
-                        LinearLayout layoutTipi = new LinearLayout(getApplicationContext());
-                            TextView tipo1 = new TextView(getApplicationContext()); //è contenuto in layoutTipi
-                            TextView tipo2 = new TextView(getApplicationContext()); //è contenuto in layoutTipi
+                ImageView artwork = new ImageView(this);    //è contenuto in layoutRigaPkmn
+                LinearLayout layoutRigaColorata = new LinearLayout(getApplicationContext());    // è contenuto in layoutRigaPkmn
+                TextView id = new TextView(this);  //è contenuto in layoutRigaColorata
+                TextView nomePkmn = new TextView(getApplicationContext());  //è contenuto in layoutRigaColorata
+                LinearLayout layoutTipi = new LinearLayout(getApplicationContext());
+                TextView tipo1 = new TextView(getApplicationContext()); //è contenuto in layoutTipi
+                TextView tipo2 = new TextView(getApplicationContext()); //è contenuto in layoutTipi
 
                 //imposto ed annido le view
                 layoutRigaPkmn.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));

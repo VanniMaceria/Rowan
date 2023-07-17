@@ -18,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         dbHandler = new DatabaseHandler(this);
-        dbHandler.popolaDb();   //questo mi serve per quando aggiungo i pokemon, poi alla fine lo toglierò
+
+        //questo mi serve per quando aggiungo i pokemon, poi alla fine lo toglierò
+        dbHandler.popolaDb();
+
 
         /*
           Con SharedPreferences posso specificare alcune informazioni, in questo caso decido di usare il metodo
@@ -27,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences ratePrefs = getSharedPreferences("First Update", 0);
         if (!ratePrefs.getBoolean("FrstTime", false)) {
             // Do update you want here
-            dbHandler.popolaDb();   //popolo il db
+            //popolo il db
+            dbHandler.popolaDb();
+
 
             SharedPreferences.Editor edit = ratePrefs.edit();
             edit.putBoolean("FrstTime", true);

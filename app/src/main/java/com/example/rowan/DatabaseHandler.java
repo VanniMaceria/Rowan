@@ -20,7 +20,7 @@ import java.io.ByteArrayOutputStream;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
     private Context context;
-    private static int DATABASE_VERSION = 23;
+    private static int DATABASE_VERSION = 29;
     private static final String DATABASE_NAME = "RowanDB";
     //tabella Pokèmon
     private static final String TABELLA_POKEMON = "Pokemon";
@@ -37,13 +37,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String COLONNA_DESCRIZIONE = "descrizione";
     private static final String COLONNA_ARTWORK = "artwork";
     private static final String COLONNA_ARTWORK_SHINY = "artworkShiny";
-    //tabella Regioni
-    private static final String TABELLA_REGIONI = "Regioni";
-    private static final String COLONNA_NOME_REGIONE = "nomeRegione";
-    //join table Appartenenza (M:N)
-    private static final String TABELLA_APPARTENENZA= "Appartenenza";
-    private static final String COLONNA_ID_REPLICA = "id";
-    private static final String COLONNA_NOME_REGIONE_REPLICA = "nomeRegione";
+
 
     public DatabaseHandler(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -76,7 +70,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS " + TABELLA_POKEMON);
-        //fallo anche per le altre tabelle
         onCreate(db);
     }
 
@@ -386,12 +379,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(jolteon);
         Pokemon flareon = new Pokemon(136, "Flareon", "Fuoco", null, 0.9F, 25.0F, "Fuocardore", "Dentistretti", "Fiamma", "L’aria che inspira si infiamma passando per la sacca ardente che ha nel corpo, per poi essere espirata alla temperatura di 1.700 ºC. Arruffa il folto pelo intorno al collo per raffreddare il corpo, che può raggiungere i 900 ºC.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._36_flareon)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._36_flareonshiny)));
         addPokemon(flareon);
-        
+
 
 
 
     }
-
 
     public Cursor selectAll(){
         String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + ";";
@@ -429,12 +421,25 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public Cursor selectAllFromKanto(){
-        String query = "SELECT * FROM " + TABELLA_POKEMON + " JOIN " + TABELLA_APPARTENENZA + " ON " + COLONNA_ID + " = " + COLONNA_ID_REPLICA + " WHERE " + COLONNA_NOME_REGIONE + " = Kanto;";
+    public Cursor selectAllFromKanto() {
+        String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + " WHERE " + COLONNA_ID + " >= 1 AND " + COLONNA_ID + " <= 151;";
+
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = null;
-        if(db != null){
+        if (db != null) {
+            cursor = db.rawQuery(query, null);
+        }
+        return cursor;
+    }
+
+    public Cursor selectAllFromJohto() {
+        String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + " WHERE " + COLONNA_ID + " >= 152 AND " + COLONNA_ID + " <= 251;";
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null) {
             cursor = db.rawQuery(query, null);
         }
         return cursor;
