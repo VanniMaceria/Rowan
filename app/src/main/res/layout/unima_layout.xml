@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:text="La regione di Unima"
         android:textSize="30dp"
-        android:fontFamily="@font/ubuntu_medium"
         android:textColor="@color/black"
         android:layout_marginStart="2dp"
         android:id="@+id/titolo">
@@ -61,9 +60,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I pokèmon della regione"
-        android:textSize="30dp"
-        android:fontFamily="@font/ubuntu_medium"
+        android:text="I pokèmon di V generazione"
+        android:textSize="28dp"
         android:textColor="@color/black"
         android:layout_marginStart="2dp"
         android:id="@+id/secondoTitolo"

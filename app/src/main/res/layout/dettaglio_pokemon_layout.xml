@@ -62,7 +62,7 @@
                 android:drawableRight="@drawable/ic_arrow_forward"
                 android:layout_toRightOf="@id/artworkBig"
                 android:layout_marginTop="170dp"
-               android:backgroundTint="@color/white"
+                android:backgroundTint="@color/white"
                 android:onClick="onForwardClick"
                 style="?android:attr/borderlessButtonStyle"
                 android:id="@+id/forward">
@@ -80,7 +80,6 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="10dp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/ubuntu_medium"
                 android:layout_marginTop="3dp">
             </TextView>
 
@@ -94,7 +93,6 @@
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_below="@id/artworkBig"
-                android:fontFamily="@font/ubuntu_medium"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="3dp">
             </TextView>
@@ -124,7 +122,6 @@
                         android:layout_marginStart="2dp"
                         android:layout_marginEnd="10dp"
                         android:background="@color/BlueDuck"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:paddingHorizontal="7dp"
                         android:text="Tipo"
                         android:textColor="@color/white"
@@ -136,7 +133,6 @@
                         android:layout_width="140dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:gravity="center"
                         android:paddingHorizontal="5dp"
 
@@ -154,7 +150,6 @@
                         android:textSize="25dp"
                         android:paddingHorizontal="5dp"
 
-                        android:fontFamily="@font/ubuntu_medium"
                         android:gravity="center">
                     </TextView>
 
@@ -184,7 +179,6 @@
                         android:paddingVertical="5dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:background="@color/BlueDuck"
                         android:paddingHorizontal="10dp">
                     </TextView>
@@ -197,8 +191,7 @@
                         android:paddingVertical="5dp"
                         android:layout_marginHorizontal="5dp"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium">
+                        android:textSize="25dp">
                     </TextView>
 
                     <TextView
@@ -208,7 +201,6 @@
                         android:paddingVertical="5dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:background="@color/BlueDuck"
                         android:paddingHorizontal="10dp">
                     </TextView>
@@ -218,7 +210,6 @@
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="5dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:paddingVertical="5dp"
                         android:text="000"
                         android:textColor="@color/white"
@@ -247,7 +238,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:paddingVertical="5dp"
                         android:text="Abilità"
                         android:textColor="@color/white"
@@ -262,7 +252,6 @@
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="10dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:paddingVertical="5dp"
                         android:text="000"
                         android:textColor="@color/white"
@@ -295,7 +284,6 @@
                         android:paddingVertical="5dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:background="@color/BlueDuck"
                         android:paddingHorizontal="10dp">
                     </TextView>
@@ -308,8 +296,7 @@
                         android:paddingVertical="5dp"
                         android:layout_marginHorizontal="10dp"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium">
+                        android:textSize="25dp">
                     </TextView>
 
                 </LinearLayout>
@@ -338,7 +325,6 @@
                         android:paddingVertical="5dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:background="@color/BlueDuck"
                         android:paddingHorizontal="10dp">
                     </TextView>
@@ -348,7 +334,6 @@
                         android:layout_width="190dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="10dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:paddingVertical="5dp"
                         android:text="placeholder"
                         android:textColor="@color/white"
@@ -379,7 +364,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="20dp"
                         android:background="@color/BlueDuck"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:paddingVertical="5dp"
                         android:text="Descrizione"
                         android:textColor="@color/white"
@@ -395,7 +379,6 @@
                         android:paddingVertical="5dp"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:fontFamily="@font/ubuntu_medium"
                         android:layout_marginStart="2dp">
                     </TextView>
 

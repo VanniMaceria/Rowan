@@ -18,8 +18,7 @@
             android:textSize="25dp"
             android:textColor="@color/black"
             android:id="@+id/diritti"
-            android:layout_marginStart="3dp"
-            android:fontFamily="@font/ubuntu_medium">
+            android:layout_marginStart="3dp">
         </TextView>
 
         <FrameLayout
@@ -45,8 +44,7 @@
                 android:textSize="25dp"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="3dp"
-                android:fontFamily="@font/ubuntu_medium">
+                android:layout_marginStart="3dp">
             </TextView>
 
             <ImageView
@@ -83,8 +81,7 @@
                 android:textSize="25dp"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="3dp"
-                android:fontFamily="@font/ubuntu_medium">
+                android:layout_marginStart="3dp">
             </TextView>
 
             <ImageView
@@ -113,8 +110,7 @@
             android:textSize="25dp"
             android:textColor="@color/black"
             android:layout_marginStart="3dp"
-            android:id="@+id/sviluppo"
-            android:fontFamily="@font/ubuntu_medium">
+            android:id="@+id/sviluppo">
         </TextView>
 
         <FrameLayout
@@ -133,8 +129,7 @@
             android:text="Curiosità"
             android:textSize="25dp"
             android:textColor="@color/black"
-            android:layout_marginStart="3dp"
-            android:fontFamily="@font/ubuntu_medium">
+            android:layout_marginStart="3dp">
         </TextView>
 
         <FrameLayout
