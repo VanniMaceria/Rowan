@@ -395,7 +395,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(snorlax);
         Pokemon articuno = new Pokemon(144, "Articuno", "Ghiaccio", "Volante", 1.7F, 55.4F, "Pressione", "Mantelneve", "Gelo", "Un Pokémon alato leggendario. Riesce a creare bufere di neve congelando l’umidità nell’aria.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._44_articuno)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._44_articunoshiny)));
         addPokemon(articuno);
-        
+
 
 
 
