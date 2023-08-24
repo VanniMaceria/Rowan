@@ -20,7 +20,7 @@ import java.io.ByteArrayOutputStream;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
     private Context context;
-    private static int DATABASE_VERSION = 29;
+    private static int DATABASE_VERSION = 30;
     private static final String DATABASE_NAME = "RowanDB";
     //tabella Pokèmon
     private static final String TABELLA_POKEMON = "Pokemon";
@@ -379,6 +379,24 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(jolteon);
         Pokemon flareon = new Pokemon(136, "Flareon", "Fuoco", null, 0.9F, 25.0F, "Fuocardore", "Dentistretti", "Fiamma", "L’aria che inspira si infiamma passando per la sacca ardente che ha nel corpo, per poi essere espirata alla temperatura di 1.700 ºC. Arruffa il folto pelo intorno al collo per raffreddare il corpo, che può raggiungere i 900 ºC.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._36_flareon)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._36_flareonshiny)));
         addPokemon(flareon);
+        Pokemon porygon = new Pokemon(137, "Porygon", "Normale", null, 0.8F, 36.5F, "Traccia\nDownload", "Ponderazione",  "Virtuale", "È il primo Pokémon della storia a essere stato creato tramite programmi, grazie all’impiego di tecnologie all’avanguardia. Negli ultimi anni ha assunto un ruolo di rilevanza nel cyberspazio, in cui si aggira per assicurarsi che non ci siano dati sospetti.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._37_porygon)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._37_porygonshiny)));
+        addPokemon(porygon);
+        Pokemon omanyte = new Pokemon(138, "Omanyte", "Roccia", "Acqua", 0.4F, 7.5F, "Guscioscudo\nNuotovelox", "Sottilguscio", "Spirale", "Questo Pokémon si sta rivelando un problema perché a volte fugge o viene liberato dopo essere stato rigenerato. È un antico Pokémon ormai estinto. Quando nuota usando i suoi dieci tentacoli sembra fluttuare nell’acqua.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._38_omanyte)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._38_omanyteshiny)));
+        addPokemon(omanyte);
+        Pokemon omastar = new Pokemon(139, "Omastar", "Roccia", "Acqua", 1.0F, 35.0F, "Guscioscudo\nNuotovelox", "Sottilguscio", "Spirale", "Si dice si sia estinto per via della conchiglia grossa e pesante che, rendendo i suoi movimenti impacciati, gli impediva di catturare le prede. Le sue zanne affilate possono frantumare anche le pietre, ma può attaccare solo le prede a portata di tentacolo.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._39_omastar)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._39_omastarshiny)));
+        addPokemon(omastar);
+        Pokemon kabuto = new Pokemon(140, "Kabuto", "Roccia", "Acqua", 0.5F, 11.5F, "Nuotovelox\nLottascudo", "Sottilguscio", "Crostaceo", "È un Pokémon sull’orlo dell’estinzione. Fa la muta ogni tre giorni indurendo gradualmente il carapace.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._40_kabuto)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._40_kabutopshiny)));
+        addPokemon(kabuto);
+        Pokemon kabutops = new Pokemon(141, "Kabutops", "Roccia", "Acqua", 1.3F, 40.5F, "Nuotovelox\nLottascudo", "Sottilguscio", "Crostaceo", "Lacera le prede e ne succhia i fluidi corporei. I resti diventano poi cibo per altri Pokémon. Questo feroce Pokémon dell’antichità viveva nei mari caldi. Le cause della sua estinzione sono ignote.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._41_kabutops)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._41_kabutopsshiny)));
+        addPokemon(kabutops);
+        Pokemon aerodactyl = new Pokemon(142, "Aerodactyl", "Roccia", "Volante", 1.8F, 59.0F, "Testadura\nPressione", "Agitazione", "Fossile", "È un feroce Pokémon dell’antichità. Pare che con la tecnologia odierna non sia possibile rigenerarlo perfettamente. Le sue zanne simili a lame sono in grado di fare a brandelli persino la pelle dei Pokémon di tipo Acciaio.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._42_aerodactyl)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._42_aerodactylshiny)));
+        addPokemon(aerodactyl);
+        Pokemon snorlax = new Pokemon(143, "Snorlax", "Normale", null, 2.1F, 460.F, "Grassospesso\nImmunità", "Voracità", "Sonno", "Il suo stomaco riesce a digerire qualsiasi tipo di cibo, anche se marcio o ammuffito. Smette di mangiare solo per dormire. Non si sente pieno se non ingurgita 400 kg di cibo al giorno.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._43_snorlax)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._43_snorlaxshiny)));
+        addPokemon(snorlax);
+        Pokemon articuno = new Pokemon(144, "Articuno", "Ghiaccio", "Volante", 1.7F, 55.4F, "Pressione", "Mantelneve", "Gelo", "Un Pokémon alato leggendario. Riesce a creare bufere di neve congelando l’umidità nell’aria.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._44_articuno)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._44_articunoshiny)));
+        addPokemon(articuno);
+        
+
 
 
 
