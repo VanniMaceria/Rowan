@@ -395,6 +395,25 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addPokemon(snorlax);
         Pokemon articuno = new Pokemon(144, "Articuno", "Ghiaccio", "Volante", 1.7F, 55.4F, "Pressione", "Mantelneve", "Gelo", "Un Pokémon alato leggendario. Riesce a creare bufere di neve congelando l’umidità nell’aria.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._44_articuno)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._44_articunoshiny)));
         addPokemon(articuno);
+        Pokemon zapdos = new Pokemon(145, "Zapdos", "Elettro", "Volante", 1.6F, 52.6F, "Pressione", "Statico", "Elettrico", "Un Pokémon alato leggendario. Si dice che viva tra le nubi temporalesche. Controlla i fulmini a proprio piacimento.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._45_zapdos)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._45_zapdosshiny)));
+        addPokemon(zapdos);
+        Pokemon moltres = new Pokemon(146, "Moltres", "Fuoco", "Volante", 2.0F, 60.0F, "Pressione", "Corpodifuoco", "Fiamma", "Uno dei Pokémon alati leggendari. Si dice che la sua comparsa preannunci l’arrivo della primavera.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._46_moltres)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._46_moltresshiny)));
+        addPokemon(moltres);
+        Pokemon dratini = new Pokemon(147, "Dratini", "Drago", null, 1.8F, 3.3F, "Muta", "Pelledura", "Drago", "Cresce cambiando ripetutamente la pelle. Durante la muta, si protegge tra le acque impetuose di una cascata.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._47_dratini)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._47_dratinishiny)));
+        addPokemon(dratini);
+        Pokemon dragonair = new Pokemon(148, "Dragonair", "Drago", null, 4.0F, 16.5F, "Muta", "Pelledura", "Drago", "È chiamato il Pokémon sacro. Quando il corpo emana un lieve bagliore, cambia il tempo.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._48_dragonair)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._48_dragonairshiny)));
+        addPokemon(dragonair);
+        Pokemon dragonite = new Pokemon(149, "Dragonite", "Drago", "Volante", 2.2F, 210.0F, "Forza interiore", "Multisquame", "Drago", "Si dice che questi Pokémon si riuniscano su un’isola in mezzo all’oceano dove vivono solo loro. Nonostante la stazza, è in grado di volare. Può compiere il giro del mondo in 16 ore.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._49_dragonite)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._49_dragoniteshiny)));
+        addPokemon(dragonite);
+        Pokemon mewtwo = new Pokemon(150, "Mewtwo", "Psico", null, 2.0F, 122.0F, "Pressione", "Agitazione", "Genetico", "Il suo DNA è quasi uguale a quello di Mew. Ciò nonostante, sono agli antipodi per dimensioni e carattere.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._50_mewtwo)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._50_mewtwoshiny)));
+        addPokemon(mewtwo);
+        Pokemon mew = new Pokemon(151, "Mew", "Psico", null, 0.4F, 4.0F, "Sinconismo", null, "Novaspecie", "Osservando al microscopio la pelle di Mew si può constatare che è ricoperta da una fitta peluria, corta e fine.", convertToByteArray(ContextCompat.getDrawable(context, R.drawable._51_mew)), convertToByteArray(ContextCompat.getDrawable(context, R.drawable._51_mewshiny)));
+        addPokemon(mew);
+        //Johto #[152 - 251]
+
+
+
+
 
 
 

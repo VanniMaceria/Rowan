@@ -196,6 +196,14 @@ public class DettaglioPokemon extends AppCompatActivity {
         switch (id){
             case 144:   //Articuno
                 return true;
+            case 145:   //Zapdos
+                return true;
+            case 146:   //Moltres
+                return true;
+            case 150:   //Mewtwo
+                return true;
+            case 151:   //Mew
+                return true;
         }
         return false;
     }
