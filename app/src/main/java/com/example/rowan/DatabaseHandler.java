@@ -422,6 +422,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
+    //queries utili
     public Cursor selectAll(){
         String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + ";";
         SQLiteDatabase db = this.getReadableDatabase();
@@ -458,20 +459,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public Cursor selectAllFromKanto() {
-        String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + " WHERE " + COLONNA_ID + " >= 1 AND " + COLONNA_ID + " <= 151;";
-
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor cursor = null;
-        if (db != null) {
-            cursor = db.rawQuery(query, null);
-        }
-        return cursor;
-    }
-
-    public Cursor selectAllFromJohto() {
-        String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + " WHERE " + COLONNA_ID + " >= 152 AND " + COLONNA_ID + " <= 251;";
+    public Cursor selectAllFromRegione(int min, int max) {
+        String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + " WHERE " + COLONNA_ID + " >= '" + min + "' AND " + COLONNA_ID + " <= '" + max + "';";
 
         SQLiteDatabase db = this.getReadableDatabase();
 

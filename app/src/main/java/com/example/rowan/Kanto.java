@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-public class Kanto extends Activity{
+public class Kanto extends Activity implements GeneratoreRigheRegione{
     private DatabaseHandler dbHandler;
 
     @Override
@@ -28,11 +28,12 @@ public class Kanto extends Activity{
         displayData();
     }
 
+    @Override
     public void displayData() {
         LinearLayout contenitore = findViewById(R.id.contenitore);  //contiene tutte le view delle righe dei pkmn
         Colorazione colorazione = new Colorazione();
 
-        Cursor cursor = dbHandler.selectAllFromKanto();
+        Cursor cursor = dbHandler.selectAllFromRegione(1, 151);
         if (cursor.getCount() == 0) {
             Log.d("MYTAG", "NON CI SONO PKMN");
         }
