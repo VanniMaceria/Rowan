@@ -16,8 +16,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-public class Kanto extends Activity {
-    DatabaseHandler dbHandler;
+public class Kanto extends Activity{
+    private DatabaseHandler dbHandler;
 
     @Override
     public void onCreate(Bundle savedIstance) {

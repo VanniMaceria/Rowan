@@ -16,23 +16,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class DettaglioPokemon extends AppCompatActivity {
-    int id;
-    DatabaseHandler dbHandler;
-    Cursor cursor;
-    ImageView artwork;
-    TextView idTv;
-    TextView nome;
-    TextView tipo1;
-    TextView tipo2;
-    TextView altezza;
-    TextView peso;
-    TextView abilita;
-    TextView abilitaN;
-    TextView categoria;
-    TextView descrizione;
-    boolean flag = false;
-    Colorazione colorazione;
-    ArrayList<Integer> leggendari;
+    private int id;
+    private DatabaseHandler dbHandler;
+    private Cursor cursor;
+    private ImageView artwork;
+    private TextView idTv;
+    private TextView nome;
+    private TextView tipo1;
+    private TextView tipo2;
+    private TextView altezza;
+    private TextView peso;
+    private TextView abilita;
+    private TextView abilitaN;
+    private TextView categoria;
+    private TextView descrizione;
+    private boolean flag = false;
+    private Colorazione colorazione;
+    private ArrayList<Integer> leggendari;
 
     /*
      * In questa classe aggiungi dei pulsanti per switchare la forma regionale, descrizione,
@@ -51,7 +51,7 @@ public class DettaglioPokemon extends AppCompatActivity {
 
         /*lista contenente gli id di tutti i leggendari l'alternativa sarebbe stata mettere un campo booleano isLeggendario come
          attributo della tabella Pokèmon ma preferisco fare così*/
-        leggendari = new ArrayList<Integer>(Arrays.asList(144, 145, 146));
+        leggendari = new ArrayList<Integer>(Arrays.asList(144, 145, 146, 150, 151));
 
         boolean isLeggendario = isLeggendario();
         Log.d("MYTAG", "FLAG -> " + isLeggendario);
@@ -132,8 +132,6 @@ public class DettaglioPokemon extends AppCompatActivity {
         descrizione = new TextView(this);
         descrizione = findViewById(R.id.dettaglioDescrizione);
         descrizione.setText(cursor.getString(10));
-
-
     }
 
     public void onShinyClick(View v) {
@@ -192,18 +190,9 @@ public class DettaglioPokemon extends AppCompatActivity {
         onBackPressed();
     }
 
-    public boolean isLeggendario(){
-        switch (id){
-            case 144:   //Articuno
-                return true;
-            case 145:   //Zapdos
-                return true;
-            case 146:   //Moltres
-                return true;
-            case 150:   //Mewtwo
-                return true;
-            case 151:   //Mew
-                return true;
+    public boolean isLeggendario() {
+        if(leggendari.contains(id)){
+            return true;
         }
         return false;
     }

@@ -18,7 +18,7 @@
             android:textSize="25dp"
             android:textColor="@color/black"
             android:id="@+id/diritti"
-            android:layout_marginStart="3dp">
+            android:layout_marginStart="10dp">
         </TextView>
 
         <FrameLayout
@@ -44,7 +44,7 @@
                 android:textSize="25dp"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="3dp">
+                android:layout_marginStart="10dp">
             </TextView>
 
             <ImageView
@@ -79,9 +79,9 @@
                 android:layout_height="wrap_content"
                 android:text="Instagram"
                 android:textSize="25dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="3dp">
+                android:layout_marginStart="10dp">
             </TextView>
 
             <ImageView
@@ -109,7 +109,7 @@
             android:text="Sviluppo"
             android:textSize="25dp"
             android:textColor="@color/black"
-            android:layout_marginStart="3dp"
+            android:layout_marginStart="10dp"
             android:id="@+id/sviluppo">
         </TextView>
 
@@ -129,7 +129,26 @@
             android:text="Curiosità"
             android:textSize="25dp"
             android:textColor="@color/black"
-            android:layout_marginStart="3dp">
+            android:layout_marginStart="10dp">
+        </TextView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/BlueDuck"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringraziamenti"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp">
         </TextView>
 
         <FrameLayout

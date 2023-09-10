@@ -16,9 +16,9 @@ import android.widget.TextView;
 
 
 public class PokedexFragment extends Fragment {
-    EditText barraDiRicerca;
-    DatabaseHandler dbHandler;
-    ImageView button;
+    private EditText barraDiRicerca;
+    private DatabaseHandler dbHandler;
+    private ImageView button;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

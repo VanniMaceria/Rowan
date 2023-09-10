@@ -11,8 +11,8 @@ import android.os.Bundle;
 import com.example.rowan.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding;
-    DatabaseHandler dbHandler;
+    private ActivityMainBinding binding;
+    private DatabaseHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         dbHandler = new DatabaseHandler(this);
 
         //questo mi serve per quando aggiungo i pokemon, poi alla fine lo toglierò
-        dbHandler.popolaDb();
+        //dbHandler.popolaDb();
 
 
         /*
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         if (!ratePrefs.getBoolean("FrstTime", false)) {
             // Do update you want here
             //popolo il db
-            dbHandler.popolaDb();
+            //dbHandler.popolaDb();
 
 
             SharedPreferences.Editor edit = ratePrefs.edit();
