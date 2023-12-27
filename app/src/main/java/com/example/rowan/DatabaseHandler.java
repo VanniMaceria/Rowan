@@ -471,6 +471,23 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public Cursor selectByFilter(String tipo1, String tipo2){
+        String query = "SELECT DISTINCT " +
+                COLONNA_ID + ", " +
+                COLONNA_NOME + ", " +
+                COLONNA_ARTWORK + ", " +
+                COLONNA_TIPO_1 + ", " +
+                COLONNA_TIPO_2 + " FROM " + TABELLA_POKEMON;    //aggiungi gli WHERE in base ai filtri selezionati
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null) {
+            cursor = db.rawQuery(query, null);
+        }
+        return cursor;
+    }
+
     public byte[] convertToByteArray(Drawable d){
         Bitmap bitmap =  ((BitmapDrawable)d).getBitmap();
         ByteArrayOutputStream stream = new ByteArrayOutputStream();

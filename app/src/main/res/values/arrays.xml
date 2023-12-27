@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tipi">
+        <item>Normale</item>
+        <item>Fuoco</item>
+        <item>Acqua</item>
+        <item>Erba</item>
+        <item>Elettro</item>
+        <item>Ghiaccio</item>
+        <item>Lotta</item>
+        <item>Veleno</item>
+        <item>Terra</item>
+        <item>Volante</item>
+        <item>Psico</item>
+        <item>Coleottero</item>
+        <item>Roccia</item>
+        <item>Spettro</item>
+        <item>Drago</item>
+        <item>Buio</item>
+        <item>Acciaio</item>
+        <item>Folletto</item>
+    </array>
+</resources>

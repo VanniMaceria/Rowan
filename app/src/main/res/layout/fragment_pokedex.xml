@@ -21,7 +21,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:id="@+id/container_barra_di_ricerca">
 
                     <EditText
                         android:id="@+id/barra_di_ricerca"
@@ -52,10 +53,63 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/container_barra_di_ricerca"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filtri avanzati"
+                        android:textSize="20dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/Rowan">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_tipi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/container_barra_di_ricerca"
+                    android:layout_marginTop="50dp">
+
+                    <Spinner
+                        android:id="@+id/tipo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/tipi"/>
+
+                    <Spinner
+                        android:id="@+id/tipo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/tipi"
+                        />
+                </LinearLayout>
+
             </RelativeLayout>
 
-
         </ScrollView>
+
+        <ImageView
+            android:id="@+id/pulsante_cerca_filtrato"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icona_cerca_teal"
+            android:background="@drawable/pulsante_cerca_2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+        </ImageView>
 
     </RelativeLayout>
 

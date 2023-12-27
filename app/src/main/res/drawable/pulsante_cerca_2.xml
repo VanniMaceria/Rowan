@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke
+        android:width="0dp"
+        android:color= "@color/Rowan"/>
+
+    <solid android:color="@color/Rowan"/>
+
+    <padding
+        android:left="10dp"
+        android:right="10dp"
+        android:bottom="10dp"
+        android:top="10dp" />
+
+    <corners
+        android:topLeftRadius="360dp"
+        android:topRightRadius="360dp"
+        android:bottomLeftRadius="360dp"
+        android:bottomRightRadius="0dp"/>
+
+</shape>
