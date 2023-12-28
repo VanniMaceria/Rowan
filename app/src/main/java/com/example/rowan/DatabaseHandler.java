@@ -471,19 +471,29 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public Cursor selectByFilter(String tipo1, String tipo2){
-        String query = "SELECT DISTINCT " +
+    public Cursor selectByFilter(String tipo1, String tipo2) {
+        StringBuilder query = new StringBuilder("SELECT DISTINCT " +
                 COLONNA_ID + ", " +
                 COLONNA_NOME + ", " +
                 COLONNA_ARTWORK + ", " +
                 COLONNA_TIPO_1 + ", " +
-                COLONNA_TIPO_2 + " FROM " + TABELLA_POKEMON;    //aggiungi gli WHERE in base ai filtri selezionati
+                COLONNA_TIPO_2 + " FROM " + TABELLA_POKEMON);
+
+        if (!tipo1.equals("No tipo")) {
+            query.append(" WHERE " + COLONNA_TIPO_1 + " = '").append(tipo1).append("'");
+
+            if (!tipo2.equals("No tipo")) {
+                query.append(" AND " + COLONNA_TIPO_2 + " = '").append(tipo2).append("'");
+            }
+        } else if (!"No tipo".equals(tipo2)) {
+            query.append(" WHERE " + COLONNA_TIPO_2 + " = '").append(tipo2).append("'");
+        }
 
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = null;
         if (db != null) {
-            cursor = db.rawQuery(query, null);
+            cursor = db.rawQuery(query.toString(), null);
         }
         return cursor;
     }

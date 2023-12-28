@@ -91,25 +91,34 @@
                         android:layout_height="wrap_content"
                         android:entries="@array/tipi"
                         />
+
+                    <ImageView
+                        android:id="@+id/pulsante_cerca_filtrato"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_toRightOf="@id/container_tipi"
+                        android:src="@drawable/icona_cerca_teal"
+                        android:background="@drawable/pulsante_cerca_2"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_alignParentEnd="true"
+                        >
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contenitore_righe_pkmn"
+                    android:orientation="vertical"
+                    android:layout_below="@id/container_tipi"
+                    android:layout_marginTop="50dp">
                 </LinearLayout>
 
             </RelativeLayout>
 
         </ScrollView>
-
-        <ImageView
-            android:id="@+id/pulsante_cerca_filtrato"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/icona_cerca_teal"
-            android:background="@drawable/pulsante_cerca_2"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="15dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp">
-        </ImageView>
 
     </RelativeLayout>
 

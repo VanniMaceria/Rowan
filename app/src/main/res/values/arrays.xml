@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="tipi">
+        <item>No tipo</item>
         <item>Normale</item>
         <item>Fuoco</item>
         <item>Acqua</item>
