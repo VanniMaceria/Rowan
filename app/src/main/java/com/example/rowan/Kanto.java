@@ -58,7 +58,7 @@ public class Kanto extends Activity implements GeneratoreRigheRegione{
                 layoutRigaPkmn.setLayoutParams(layoutParamsRigaPkmn);
                 layoutRigaPkmn.setClickable(true);
 
-                int ida = cursor.getInt(1);
+                int ida = cursor.getInt(0);
                 //al click di una riga parte l'activity del dettaglio pokemon; Passo l'id così posso fare la select su quel Pokèmon
                 layoutRigaPkmn.setOnClickListener(view -> {
                     Intent i = new Intent(getBaseContext(), DettaglioPokemon.class);
@@ -93,13 +93,13 @@ public class Kanto extends Activity implements GeneratoreRigheRegione{
                 layoutTipi.addView(tipo2);
 
                 //retrieve dell'artwork
-                byte[] img = cursor.getBlob(11);
+                byte[] img = cursor.getBlob(2);
                 Bitmap bitmap = BitmapFactory.decodeByteArray(img, 0, img.length);
                 artwork.setImageBitmap(bitmap);
                 //fine retrieve dell'artwork
 
                 //retrieve dell'id
-                id.setText("#" + cursor.getInt(1));
+                id.setText("#" + cursor.getInt(0));
                 id.setTextColor(Color.WHITE);
                 id.setGravity(Gravity.START);
                 id.setTextSize(23);
@@ -109,7 +109,7 @@ public class Kanto extends Activity implements GeneratoreRigheRegione{
                 id.setWidth(150);
 
                 //retrieve del nome
-                nomePkmn.setText(cursor.getString(2));
+                nomePkmn.setText(cursor.getString(1));
                 nomePkmn.setTextColor(Color.WHITE);
                 nomePkmn.setGravity(Gravity.START);
                 nomePkmn.setTextSize(23);

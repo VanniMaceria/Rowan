@@ -460,7 +460,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     public Cursor selectAllFromRegione(int min, int max) {
-        String query = "SELECT DISTINCT * FROM " + TABELLA_POKEMON + " WHERE " + COLONNA_ID + " >= '" + min + "' AND " + COLONNA_ID + " <= '" + max + "';";
+        String query = "SELECT DISTINCT " +
+                COLONNA_ID + ", " +
+                COLONNA_NOME + ", " +
+                COLONNA_ARTWORK + ", " +
+                COLONNA_TIPO_1 + "," +
+                COLONNA_TIPO_2 + " FROM " + TABELLA_POKEMON + " WHERE " + COLONNA_ID + " >= '" + min + "' AND " + COLONNA_ID + " <= '" + max + "';";
 
         SQLiteDatabase db = this.getReadableDatabase();
 
