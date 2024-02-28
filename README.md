@@ -1,6 +1,9 @@
 # Rowan
 Rowan is a simple pokèdex for android devices where you can search pokèmon by region, id, name, type and much more... <br>
-> Developed in Java <br>
+> Developed in Java
+
+> Data persistence realized using SQLite
+
 <p align="center">
  <img src="app/src/main/res/drawable/logo.png" width="200" height="200"> 
 </p><br>
