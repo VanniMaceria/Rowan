@@ -15,6 +15,12 @@ Here some screenshots: <br>
   <img src="https://github.com/VanniMaceria/Rowan/assets/114587415/6edcc97a-13f3-45f0-ae70-21fa23c37b2e" width="230" height="500"> &nbsp; &nbsp;
 </div>
 
+> [!NOTE]
+> The Pokémon information used in this application is provided by © The Pokémon Company. All rights to Pokémon are owned by © The Pokémon Company. For more information about Pokémon and their properties, visit The Pokémon Company's official website at [www.pokemon.com](https://www.pokemon.com/us).
+
+> [!IMPORTANT]
+> The project was developed for pure fun and in no way is there any source of income.
+
 > [!WARNING] 
 > **The first launch of the app will take a few minutes as the database is initializing** <br>
 
